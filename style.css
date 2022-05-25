@@ -1,0 +1,1144 @@
+/* controles generales para todas las páginas */
+
+@font-face {
+  font-family: "bree";
+  src: url(resources/fonts/BreeSerif-Regular.ttf);
+}
+
+@font-face {
+  font-family: "ruda-regular";
+  src: url(resources/fonts/Ruda-Regular.ttf);
+}
+
+@font-face {
+  font-family: "ruda-bold";
+  src: url(resources/fonts/Ruda-Bold.ttf);
+}
+
+@font-face {
+  font-family: "ruda-semibold";
+  src: url(resources/fonts/Ruda-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: "ruda-extrabold";
+  src: url(resources/fonts/Ruda-ExtraBold.ttf);
+}
+
+@font-face {
+  font-family: "ruda-black";
+  src: url(resources/fonts/Ruda-Black.ttf);
+}
+
+@font-face {
+  font-family: "ruda-medium";
+  src: url(resources/fonts/Ruda-Medium.ttf);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  font-family: "ruda-regular";
+  color: hsl(221, 56%, 31%);
+  list-style: none;
+  font-size: 20px;
+}
+
+.fondo-menu {
+  background-color: hsl(45, 100%, 82%);
+}
+
+.fondo-articulo {
+  background-color: hsl(210, 22%, 78%);
+}
+
+.barra {
+  background-color: hsl(0, 0%, 40%);
+  height: 3px;
+}
+
+.productos-imagenes {
+  margin: 10px;
+  width: 100%;
+  max-width: 275px;
+  border-radius: 10px;
+}
+
+.productos-imagenes:hover {
+  z-index: 2;
+  transition: all .3s ease-in;
+  transform: scale(1.1);
+  box-shadow: 7px 7px 6px hsl(0, 0%, 70%)
+}
+
+/* parametros de cabecera */
+.header-container {
+  display: flex;
+  /* <<=== no tocar*/
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-container {
+  width: 30%;
+  max-width: 300px;
+}
+
+.main-logo {
+  width: 100%;
+  position: relative;
+  top: 30px;
+  z-index: 3;
+}
+
+.title-container {
+  display: flex;
+  flex-direction: column;
+  width: 70vw;
+  max-width: 500px;
+}
+
+.title-container div {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.title {
+  font-family: "bree";
+  text-decoration: underline;
+  text-underline-offset: 7px;
+  font-size: clamp(20px, 9vw, 70px);
+  margin-bottom: 15px;
+}
+
+.subtitle {
+  font-size: clamp(10px, 4vw, 25px);
+}
+
+/* Fin de parametros de cabecera */
+
+/* Parametros de menu principal */
+.main-menu-container {
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.main-menu-nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+}
+
+.main-menu {
+  width: 50%;
+  max-width: 40rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.menu-list {
+  display: flex;
+  align-items: center;
+  height: 25px;
+  padding: 2px;
+}
+
+.menu-list:hover {
+  transition: all .3s ease-in;
+  background-color: hsl(45, 100%, 75%);
+  transform: scale(1.1);
+  border-radius: 5px;
+}
+
+.menu-list a {
+  font-family: "ruda-bold";
+  font-size: clamp(12px, 1.7vw, 16px);
+}
+
+/* fin de parametros de menú principal */
+
+/* Parametros de Footer */
+footer {
+  width: 100%;
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+}
+
+footer div {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.imagen-despedida {
+  width: 10rem;
+  margin-bottom: 10px;
+}
+
+.redes-sociales {
+  width: 100%;
+  max-width: 30rem;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 10px 0;
+}
+
+.redes-sociales-nav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.enlaces:hover {
+  transition: all .3s ease-in;
+  transform: scale(1.1);
+}
+
+.links {
+  height: 2rem;
+}
+
+.legal {
+  margin-top: 20px;
+}
+
+.legal p b {
+  font-family: "bree";
+  font-size: clamp(12px, 1.7vw, 16px);
+}
+
+/* Fin de Parametros de footer */
+
+/* parametros de tarjetas de imágenes */
+.card-container {
+  position: relative;
+  width: fit-content;
+  max-width: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 60px 10px;
+  margin: 30px 5px 5px 5px;
+}
+
+.card {
+  position: relative;
+  width: 300px;
+  height: 215px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  transition: 0.3s ease-in-out;
+  border-radius: 15px;
+}
+
+.card:hover {
+  transition: 0.5s ease-in-out;
+  height: 320px;
+}
+
+.card-image {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  flex-wrap: wrap;
+  width: 260px;
+  height: 260px;
+  top: -30%;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+.card-title {
+  position: relative;
+  bottom: 17px;
+  border-radius: 5px;
+  background-color: hsl(45, 100%, 75%);
+  width: 50%;
+  text-align: center;
+  font-size: 14px;
+}
+
+.card-image img {
+  max-width: 100%;
+  height: 260px;
+  object-fit: contain;
+}
+
+.card-content {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  top: -33%;
+  color: hsl(221, 56%, 31%);
+  text-align: center;
+  opacity: 0;
+  margin-top: 30px;
+}
+
+.card:hover .card-content {
+  transition: 1.2s ease-in-out;
+  transition-delay: 0.1s;
+  opacity: 1;
+}
+
+.card-content h3,
+.card-content p {
+  font-size: 60%;
+  margin-top: 5px;
+}
+
+/* Fin de parametros de tarjetas de imágenes */
+/* FIN DE PARAMETROS GENERALES PARA TODOS LOS HTML */
+
+/* Parametros específicos para index.html */
+/* parametros de grid */
+.grid-container-index {
+  display: grid;
+  grid-template-columns: 1fr 6fr 1fr;
+  grid-template-rows: repeat(6 auto);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.header-grid-index {
+  grid-area: 1 / 1 / 2 / 4;
+  background-image: url(resources/images/backgrounds/background.jpg);
+  background-repeat: repeat;
+  background-position: top center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.menu-grid-index {
+  grid-area: 2 / 1 / 3 / 4;
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+}
+
+.content-one-grid-index {
+  grid-area: 3 / 2 / 4 / 3;
+}
+
+.content-two-grid-index {
+  grid-area: 4 / 1 / 5 / 4;
+}
+
+
+.content-three-grid-index {
+  grid-area: 5 / 2 / 6 / 3;
+}
+
+.footer-grid-index {
+  grid-area: 6 / 1 / 7 / 4;
+  background-image: url(resources/images/backgrounds/background.jpg);
+  background-repeat: repeat;
+  background-position: top center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* fin de parametros de grid */
+
+/* Parámetros de carrousel */
+@keyframes tonext {
+  75% {
+    left: 0;
+  }
+
+  95% {
+    left: 100%;
+  }
+
+  98% {
+    left: 100%;
+  }
+
+  99% {
+    left: 0;
+  }
+}
+
+@keyframes tostart {
+  75% {
+    left: 0;
+  }
+
+  95% {
+    left: -300%;
+  }
+
+  98% {
+    left: -300%;
+  }
+
+  99% {
+    left: 0;
+  }
+}
+
+@keyframes snap {
+  96% {
+    scroll-snap-align: center;
+  }
+
+  97% {
+    scroll-snap-align: none;
+  }
+
+  99% {
+    scroll-snap-align: none;
+  }
+
+  100% {
+    scroll-snap-align: center;
+  }
+}
+
+.carrousel-container {
+  max-width: 37.5rem;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+  font-family: 'bree';
+  background-color: white;
+  padding: 25px;
+  box-shadow: 0px 0px 10px lightgrey;
+  border-radius: 25px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.carrousel-imagen {
+  position: relative;
+  bottom: 30px;
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+  scrollbar-color: transparent transparent;
+  scrollbar-width: 0px;
+}
+
+*::-webkit-scrollbar {
+  width: 0;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: transparent;
+  border: none;
+}
+
+* {
+  -ms-overflow-style: none;
+}
+
+ol,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.carousel {
+  position: relative;
+  padding-top: 75%;
+  filter: drop-shadow(0 0 10px #0003);
+  perspective: 100px;
+}
+
+.carousel__viewport {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  counter-reset: item;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+}
+
+.carousel__slide {
+  position: relative;
+  flex: 0 0 100%;
+  width: 100%;
+  counter-increment: item;
+}
+
+.carousel__slide:nth-child(even) {
+  background-color: #99f;
+}
+
+.carousel__slide:before {
+  content: counter(item);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -40%, 70px);
+  color: #fff;
+  font-size: 2em;
+}
+
+.carousel__snapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  scroll-snap-align: center;
+}
+
+@media (hover: hover) {
+  .carousel__snapper {
+    animation-name: tonext, snap;
+    animation-timing-function: ease;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  }
+
+  .carousel__slide:last-child .carousel__snapper {
+    animation-name: tostart, snap;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .carousel__snapper {
+    animation-name: none;
+  }
+}
+
+.carousel:hover .carousel__snapper,
+.carousel:focus-within .carousel__snapper {
+  animation-name: none;
+}
+
+.carousel__navigation {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+}
+
+.carousel__navigation-list,
+.carousel__navigation-item {
+  display: inline-block;
+}
+
+.carousel__navigation-button {
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: hsl(210, 22%, 78%);
+  background-clip: content-box;
+  border: 0.25rem solid transparent;
+  border-radius: 50%;
+  font-size: 0;
+  transition: transform 0.1s;
+}
+
+.carousel::before,
+.carousel::after,
+.carousel__prev,
+.carousel__next {
+  position: absolute;
+  top: 0;
+  margin-top: 37.5%;
+  width: 4rem;
+  height: 4rem;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  font-size: 0;
+  outline: 0;
+}
+
+.carousel::before,
+.carousel__prev {
+  left: -1rem;
+}
+
+.carousel::after,
+.carousel__next {
+  right: -1rem;
+}
+
+.carousel::before,
+.carousel::after {
+  content: '';
+  z-index: 1;
+  background-color: hsl(210, 22%, 78%);
+  background-size: 1.5rem 1.5rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+  color: #fff;
+  font-size: 2.5rem;
+  line-height: 4rem;
+  text-align: center;
+  pointer-events: none;
+}
+
+.carousel::before {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='0,50 80,100 80,0' fill='%23fff'/%3E%3C/svg%3E");
+}
+
+.carousel::after {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='100,50 20,100 20,0' fill='%23fff'/%3E%3C/svg%3E");
+}
+
+/* fin de parametros de carrusel */
+
+.intro {
+  display: flex;
+  justify-content: center;
+  padding: 40px 25px 45px 25px;
+}
+
+.intro-article {
+  width: 80%;
+  max-width: 800px;
+  text-align: center;
+}
+
+.muestra-container {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.img-card {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  justify-content: center;
+  height: 325px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px gray;
+  margin: 10px;
+  padding: 0%;
+}
+
+.descripcion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 75px;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+}
+
+.descripcion p {
+  text-align: center;
+  font-size: 12px;
+}
+
+.img-muestra {
+  width: 250px;
+  height: 250px;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.img-muestra:hover {
+  transition: all 0.3s ease-in;
+  transform: scale(1.05);
+}
+
+/* Fin de parametros específicos para Index.html */
+
+/* Parámetros para inicio.html */
+/* controles de grid */
+.grid-container-inicio {
+  display: grid;
+  grid-template-columns: 1fr 6fr 1fr;
+  grid-template-rows: repeat(4, auto);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.header-grid-inicio {
+  grid-area: 1 / 1 / 2 / 4;
+  background-image: url(resources/images/backgrounds/background.jpg);
+  background-repeat: repeat;
+  background-position: top center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.menu-grid-inicio {
+  grid-area: 2 / 1 / 3 / 4;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.content-one-grid-inicio {
+  grid-area: 3 / 2 / 4 / 3;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid hsl(45, 100%, 82%);
+}
+
+.footer-grid-inicio {
+  grid-area: 4 / 1 / 5 / 4;
+  background-image: url(resources/images/backgrounds/background.jpg);
+  background-repeat: repeat;
+  background-position: top center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* fin de controles de grid */
+
+.seccion-titulo {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  background-color: hsl(45, 100%, 75%);
+}
+
+.seccion-titulo h3 {
+  color: white;
+  margin: 5px 10px;
+}
+
+.seccion-container {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+/* Fin de parametros específicos para inicio.html */
+
+/* Parametros para Portfolio.Html */
+
+/* Parametros de grid */
+.grid-container-portfolio {
+  display: grid;
+  grid-template-columns: 1fr 6fr 1fr;
+  grid-template-rows: repeat(5, auto);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.header-grid-portfolio {
+  grid-area: 1 / 1 / 2 / 4;
+  background-image: url(resources/images/backgrounds/background.jpg);
+  background-repeat: repeat;
+  background-position: top center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.menu-grid-portfolio {
+  grid-area: 2 / 1 / 3 / 4;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.content-one-grid-portfolio {
+  grid-area: 3 / 2 / 4 / 3;
+  display: flex;
+  width: 100%;
+}
+
+.content-two-grid-portfolio {
+  grid-area: 4 / 2 / 5 / 3;
+}
+
+.footer-grid-portfolio {
+  grid-area: 5 / 1 / 6 / 4;
+  background-image: url(resources/images/backgrounds/background.jpg);
+  background-repeat: repeat;
+  background-position: top center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.portfolio-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: hsl(45, 100%, 95%);
+  width: 100%;
+  padding: 10px;
+}
+
+.portfolio-1,
+.portfolio-2 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: fit-content;
+  border: 3px solid white;
+  border-radius: 15px;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+.portfolio-imagen1 img,
+.portfolio-imagen2 img {
+  width: 100%;
+  max-width: 275px;
+  margin: 10px;
+  border-radius: 15px;
+  box-shadow: 0 0 7px lightgray;
+}
+
+.portfolio-texto1,
+.portfolio-texto2 {
+  justify-content: center;
+  text-align: justify;
+  width: 100%;
+  max-width: 600px;
+}
+
+.portfolio-1 article,
+.portfolio-2 article {
+  font-size: clamp(12px, 2vw, 13px);
+}
+
+/* Fin de parametros específicos de portfolio.html */
+
+/* Parametros de about-me.html */
+.grid-container-aboutme {
+  display: grid;
+  grid-template-columns: 1fr 2fr 4fr 1fr;
+  grid-template-rows: repeat(6, auto);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.header-grid-aboutme {
+  grid-area: 1 / 1 / 2 / 5;
+  background-image: url(resources/images/backgrounds/background.jpg);
+  background-repeat: repeat;
+  background-position: top center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.menu-grid-aboutme {
+  grid-area: 2 / 1 / 3 / 5;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.presentation-grid-aboutme {
+  grid-area: 3 / 3 / 6 / 4;
+  display: flex;
+  justify-content: center;
+
+}
+
+.photo-one-aboutme {
+  grid-area: 3 / 2 / 4 / 3;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 10px;
+}
+
+.photo-two-aboutme {
+  grid-area: 4 / 2 / 5 / 3;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 10px;
+}
+
+.photo-three-aboutme {
+  grid-area: 5 / 2 / 6 / 3;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 10px;
+}
+
+.div7-aboutme {
+  grid-area: 3 / 1 / 6 / 2;
+  background-color: hsl(45, 100%, 95%);
+
+}
+
+.div8-aboutme {
+  grid-area: 3 / 4 / 6 / 5;
+  background-color: hsl(45, 100%, 95%);
+
+}
+
+.footer-grid-aboutme {
+  grid-area: 6 / 1 / 7 / 5;
+  background-image: url(resources/images/backgrounds/background.jpg);
+  background-repeat: repeat;
+  background-position: top center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.photo-aboutme {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 5px;
+  box-shadow: 0 0 7px lightgray;
+}
+
+.presentation {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.presentation p {
+  margin: 10px;
+  text-align: justify;
+  max-width: 700px;
+  font-size: clamp(12px, 2vw, 15px);
+}
+
+/* Fin de parametros específicos para about-me.html */
+
+/* parametros de tienda.html */
+.grid-container-tienda {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr) 19fr 1fr;
+  grid-template-rows: repeat(4, auto);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.header-grid-tienda {
+  grid-area: 1 / 1 / 2 / 5;
+  background-image: url(resources/images/backgrounds/background.jpg);
+  background-repeat: repeat;
+  background-position: top center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.menu-grid-tienda {
+  grid-area: 2 / 1 / 3 / 5;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.side-grid-tienda {
+  grid-area: 3 / 2 / 4 / 3;
+  display: flex;
+  align-items: center;
+}
+
+.productos-grid-tienda {
+  grid-area: 3 / 3 / 4 / 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.productos-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid hsl(45, 100%, 82%);
+}
+
+.footer-grid-tienda {
+  grid-area: 4 / 1 / 5 / 5;
+  background-image: url(resources/images/backgrounds/background.jpg);
+  background-repeat: repeat;
+  background-position: top center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.shop-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 30%;
+  bottom: 30%;
+}
+
+.shop-links ul li img {
+  width: 70px;
+  margin: 10px;
+}
+
+/* Fin de parametros de tienda.html */
+
+/* parametros de contacto.html */
+
+.grid-container-contacto {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: repeat(5, auto);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.header-grid-contacto {
+  grid-area: 1 / 1 / 2 / 4;
+  background-image: url(resources/images/backgrounds/background.jpg);
+  background-repeat: repeat;
+  background-position: top center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.menu-grid-contacto {
+  grid-area: 2 / 1 / 3 / 4;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.mensaje-grid-contacto {
+  grid-area: 3 / 2 / 4 / 3;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.mensaje-container {
+  justify-content: center;
+  width: 100%;
+  max-width: 500px;
+}
+
+.mensaje-container p {
+  font-size: 80%
+}
+
+.mensaje-grid-contacto p {
+  text-align: justify;
+}
+
+.formulario-grid-contacto {
+  grid-area: 4 / 2 / 5 / 3;
+  display: flex;
+  justify-content: center;
+}
+
+.form-container {
+  background-color: hsl(45, 100%, 92%);
+  border: 3px solid hsl(45, 100%, 50%);
+  border-radius: 15px;
+  padding: 20px;
+  width: 100%;
+  max-width: 500px;
+  justify-content: center;
+}
+
+.formulario-grid-contacto form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.formulario-grid-contacto form input {
+  margin-bottom: 10px;
+}
+
+.footer-grid-contacto {
+  grid-area: 5 / 1 / 6 / 4;
+  background-image: url(resources/images/backgrounds/background.jpg);
+  background-repeat: repeat;
+  background-position: top center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* Fin de parametros para contacto.html */
+
+/* inicio media queries */
+@media (max-width: 500px) {
+
+  .main-menu {
+    width: 80%;
+  }
+
+  .menu-list a {
+    font-size: 12px;
+  }
+
+  .intro-article,
+  .intro-article h6 b,
+  .intro-article b {
+    font-size: 12px;
+    width: 100%;
+  }
+
+  .redes-sociales {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+  }
+
+  .enlaces {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .enlaces a {
+    width: fit-content;
+  }
+
+  .grid-container-index {
+    grid-template-columns: 0.3fr 10fr 0.3fr;
+  }
+
+  .grid-container-inicio {
+    grid-template-columns: 0.3fr 10fr 0.3fr;
+  }
+
+  .grid-container-portfolio {
+    grid-template-columns: 0.3fr 10fr 0.3fr;
+  }
+
+  .grid-container-aboutme {
+    grid-template-columns: 0fr 0.5fr 1fr;
+  }
+
+  .grid-container-contacto {
+    grid-template-columns: 0.3fr 10fr 0.3fr;
+  }
+
+}
