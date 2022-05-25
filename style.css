@@ -46,7 +46,23 @@
 }
 
 .fondo-menu {
-  background-color: hsl(45, 100%, 82%);
+  background-color: hsl(45, 100%, 50%);
+  animation: fondo-menu 10s ease-in-out infinite;
+}
+
+@keyframes fondo-menu{
+  0%{
+    background-color: hsl(45, 100%, 60%)
+  }
+
+  50%{
+    background-color: hsl(45, 100%, 80%)
+  }
+
+  100%{
+    background-color: hsl(45, 100%, 60%)
+  }
+  
 }
 
 .fondo-articulo {
@@ -54,7 +70,7 @@
 }
 
 .barra {
-  background-color: hsl(0, 0%, 40%);
+  background-color: darkgrey;
   height: 3px;
 }
 
@@ -633,8 +649,6 @@ li {
   width: 250px;
   justify-content: center;
   height: 325px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px gray;
   margin: 10px;
   padding: 0%;
 }
@@ -645,26 +659,33 @@ li {
   align-items: center;
   width: 250px;
   height: 75px;
-  border: 1px solid lightgray;
-  border-radius: 10px;
 }
 
-.descripcion p {
+.descripcion-texto{
   text-align: center;
   font-size: 12px;
+  opacity: 0;
+}
+
+.img-card:hover .descripcion-texto{
+  transition-delay: 0.5s;
+  transition: all 1s ease-in-out;
+  opacity: 1;
+  font-size: 14px;
 }
 
 .img-muestra {
   width: 250px;
   height: 250px;
   object-fit: contain;
-  border-radius: 10px;
 }
 
 .img-muestra:hover {
   transition: all 0.3s ease-in;
   transform: scale(1.05);
+  box-shadow: 0 0 6px lightgray;
 }
+
 
 /* Fin de parametros específicos para Index.html */
 
