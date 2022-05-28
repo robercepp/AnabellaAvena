@@ -5,10 +5,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 
     <title>Sobre Mí</title>
+
 </head>
 
 <body>
@@ -20,7 +29,7 @@
                             src="resources/images/logos/PerfilE1.png" alt="Logo principal de home"></a></div>
                 <div class="title-container">
                     <div>
-                        <h1 class="title"><a class="title" href="index.html">Anabella Avena</a></h1>
+                        <h1 class="maintitle"><a class="maintitle" href="index.html">Anabella Avena</a></h1>
                     </div>
                     <div>
                         <p class="subtitle">Ilustradora & Diseñadora Gráfica</p>
@@ -30,37 +39,67 @@
             <!-- fin de header -->
         </div>
         <div class="menu-grid-aboutme">
-            <div class="menu-grid">
-                <div class="main-menu-container fondo-menu">
-                    <nav class="main-menu-nav">
-                        <ul class="main-menu">
-                            <li class="menu-list"><a href="inicio.html">Inicio</a></li>
-                            <li class="menu-list"><a href="portfolio.html">Portfolio</a></li>
-                            <li class="menu-list"><a href="about-me.html">Sobre mí</a></li>
-                            <li class="menu-list"><a href="tienda.html">Tienda</a></li>
-                            <li class="menu-list"><a href="contacto.html">Contacto</a></li>
+            <!-- menú principal -->
+            <nav class="navbar navbar-expand-md fondo-menu">
+                <div class="container-fluid d-flex justify-content-end">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a aria-current="page" href="inicio.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a aria-current="page" href="portfolio.html">Portfolio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a aria-current="page" href="about-me.html">Sobre Mí</a>
+                            </li>
+                            <li class="nav-item">
+                                <a aria-current="page" href="tienda.html">Tienda</a>
+                            </li>
+                            <li class="nav-item">
+                                <a aria-current="page" href="contacto.html">Contacto</a>
+                            </li>
                         </ul>
-                    </nav>
+                    </div>
                 </div>
-            </div>
+            </nav>
+            <!-- fin de menú principal -->
         </div>
-        <div class="presentation-grid-aboutme">
+        <div class="presentation-grid-aboutme-one">
             <article class="presentation">
-                <p>
+                <h4 class="presentation-title-start">Introducción</h4>
+                <p class="presentation text-right">
                     ¡Hola! Mi nombre es Anabella Avena (¡Claro que podés llamarme Ana!), crecí en la ciudad de Tunuyán,
                     ubicada en un valle entre montañas en Mendoza, Argentina. Actualmente estoy viviendo en Godoy Cruz,
                     Mendoza, donde trabajo como ilustradora freelance y diseñadora gráfica a tiempo parcial, mientras
                     que en mis tiempos libres realizo proyectos de ilustración y papelería digital ilustrada para mis
                     tiendas online.
                 </p>
-                <p>
+            </article>
+        </div>
+
+        <div class="presentation-grid-aboutme-two">
+            <article class="presentation">
+                <h4 class="presentation-title-end">Comienzos</h4>
+                <p class="presentation text-left">
                     Mi amor por la ilustración empezó desde pequeña, me encantaba ver animé, leer historietas, colorear
                     libros para pintar y pasarme horas leyendo y observando los detalles de las ilustraciones de los
                     libros y revistas que me regalaban mis padres(a quienes por cierto, les estoy muy agradecida). En la
                     Universidad tuve la oportunidad de estudiar la carrera de diseño gráfico que me fue de utilidad para
                     comprender conceptos y aprender herramientas que me ayudan en mi trabajo día a día.
                 </p>
-                <p>
+            </article>
+        </div>
+
+        <div class="presentation-grid-aboutme-three">
+            <article class="presentation">
+                <h4 class="presentation-title-start">Inspiración</h4>
+                <p class="presentation text-right">
                     Tengo varias fuentes de inspiración en las que baso mi trabajo. Mi movimiento artísitco e historico
                     favorito es el impresionismo, que me hace admirar la forma en la que sus representantes estudiaban y
                     plasmaban la luz. También me siento fuertemente influenciada por la cultura japonesa y la magia
@@ -72,7 +111,13 @@
                     sobre mi vida como mujer adulta, mis valores y mi forma de ver el mundo ahora. Por lo que esta parte
                     de mi trabajo está orientada a un público adulto que disfruta de estas temáticas.
                 </p>
-                <p>
+            </article>
+        </div>
+
+        <div class="presentation-grid-aboutme-four">
+            <article class="presentation">
+                <h4 class="presentation-title-end">Datos Curiosos</h4>
+                <p class="presentation text-left">
                     Algunas cosas interesantes sobre mí: Mi compañera de trabajo es una gatita de pelo largo llamada
                     Miyuki. Me encantan los aromas y sabores cítricos, especialmente el limon. Disfruto mucho diseñando
                     e ilustrando productos físicos como ropa, juegos y juguetes, o elementos decorativos para el hogar.
@@ -81,18 +126,22 @@
                 </p>
             </article>
         </div>
+
+        <div class="grid-air-aboutme"></div>
+
         <div class="photo-one-aboutme">
             <img class="photo-aboutme" src="resources/images/aboutme/photo1.jpg" alt="anabella">
         </div>
         <div class="photo-two-aboutme">
-            <img class="photo-aboutme" src="resources/images/aboutme/photo2.jpg" alt="miyuki">
-        </div>
-        <div class="photo-three-aboutme">
             <img class="photo-aboutme" src="resources/images/aboutme/photo3.jpg" alt="niña anabella">
         </div>
+        <div class="photo-three-aboutme">
+            <img class="photo-aboutme" src="resources/images/aboutme/photo2.jpg" alt="miyuki">
+        </div>
 
-        <div class="div7-aboutme"> </div>
-        <div class="div8-aboutme"> </div>
+        <div class="photo-four-aboutme">
+            <img class="photo-aboutme" src="resources/images/aboutme/photo2.jpg" alt="miyuki">
+        </div>
 
         <div class="footer-grid-aboutme">
             <!-- inicio de footer -->
@@ -130,6 +179,11 @@
             <!-- fin de footer -->
         </div>
     </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
 
 </body>
 
