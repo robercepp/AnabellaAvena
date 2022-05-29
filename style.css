@@ -420,11 +420,17 @@ footer div {
 .content-one-grid-portfolio {
   grid-area: 3 / 2 / 4 / 3;
   display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
   width: 100%;
 }
 
 .content-two-grid-portfolio {
   grid-area: 4 / 2 / 5 / 3;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 .footer-grid-portfolio {
@@ -447,41 +453,14 @@ footer div {
   padding: 10px;
 }
 
-.portfolio-1,
-.portfolio-2 {
+.imagen-card-container{
   display: flex;
-  flex-direction: row;
-  width: 100%;
-  max-width: fit-content;
-  border: 3px solid white;
-  border-radius: 15px;
-  align-items: center;
-  flex-wrap: wrap;
   justify-content: center;
-  margin: 10px 0;
-  padding: 10px;
 }
 
-.portfolio-imagen1 img,
-.portfolio-imagen2 img {
+.imagen-card{
   width: 100%;
-  max-width: 275px;
-  margin: 10px;
-  border-radius: 15px;
-  box-shadow: 0 0 7px lightgray;
-}
-
-.portfolio-texto1,
-.portfolio-texto2 {
-  justify-content: center;
-  text-align: justify;
-  width: 100%;
-  max-width: 600px;
-}
-
-.portfolio-1 article,
-.portfolio-2 article {
-  font-size: clamp(12px, 2vw, 13px);
+  object-fit: cover;
 }
 
 /* Fin de parametros específicos de portfolio.html */
