@@ -10,9 +10,6 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
-  <!-- AOS -->
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
   <!-- CSS -->
   <link rel="stylesheet" href="style.css">
 
@@ -20,315 +17,274 @@
 
 </head>
 
-<body>
-  <div class="grid-container-index">
-    <div class="header-grid-index">
-      <!-- inicio de header -->
-      <header class="header-container">
-        <div class="logo-container"><a href="index.html"><img class="main-logo"
-              src="resources/images/logos/PerfilF1.png" alt="Logo principal de home"></a></div>
-        <div class="title-container">
-          <div>
-            <h1 class="maintitle"><a class="maintitle" href="index.html">Anabella Avena</a></h1>
-          </div>
-          <div>
-            <p class="subtitle">Ilustradora & Diseñadora Gráfica</p>
-          </div>
-        </div>
-      </header>
-      <!-- fin de header -->
-    </div>
+<body class="grid-container-index">
 
-    <div class="menu-grid-index">
-      <!-- menú principal -->
-      <nav class="navbar navbar-expand-md fondo-menu">
-        <div class="container-fluid d-flex justify-content-end">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a aria-current="page" href="inicio.html">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a aria-current="page" href="portfolio.html">Portfolio</a>
-              </li>
-              <li class="nav-item">
-                <a aria-current="page" href="about-me.html">Sobre Mí</a>
-              </li>
-              <li class="nav-item">
-                <a aria-current="page" href="tienda.html">Tienda</a>
-              </li>
-              <li class="nav-item">
-                <a aria-current="page" href="contacto.html">Contacto</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-      <!-- fin de menú principal -->
+  <!-- inicio de header -->
+  <header class="header-grid-index" id="header">
+    <div class="logo-container"><a href="index.html"><img class="main-logo" src="resources/images/logos/PerfilF1.png"
+          alt="Logo principal de home"></a>
     </div>
-
-    <div class="content-one-grid-index d-flex justify-content-center">
-      <!-- carrousel -->
-      <section class="carousel-container">
-        <div id="carouselExampleCaptions" class="carousel carousel-dark slide carousel-fade justify-content-center"
-          data-bs-ride="false">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-              aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-              aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-              aria-label="Slide 3"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
-              aria-label="Slide 4"></button>
-          </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="10000">
-              <img src="resources/images/carrousel/ejemplo2.png" class="d-block w-100" alt="Anime Girl">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Anime Girl</h5>
-                <p>Some representative placeholder content for the first slide.</p>
-              </div>
-            </div>
-            <div class="carousel-item" data-bs-interval="2000">
-              <img src="resources/images/carrousel/alaska.jpg" class="d-block w-100" alt="Alaska Girl">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Alaska</h5>
-                <p>Some representative placeholder content for the second slide.</p>
-              </div>
-            </div>
-            <div class="carousel-item" data-bs-interval="2000">
-              <img src="resources/images/carrousel/flipping.png" class="d-block w-100" alt="Flipping Girl">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Flipping</h5>
-                <p>Some representative placeholder content for the third slide.</p>
-              </div>
-            </div>
-            <div class="carousel-item" data-bs-interval="2000">
-              <img src="resources/images/carrousel/bojack.jpg" class="d-block w-100" alt="bojack">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Bojack Horseman</h5>
-                <p>Some representative placeholder content for the third slide.</p>
-              </div>
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-      </section>
-
-      <!-- fin de carrousel -->
-    </div>
-    <div class="content-two-grid-index">
-      <div data-aos="fade-right" data-aos-delay="10" data-aos-offset="300" data-aos-duration="1200" class="barra">
-        <!-- barra divisoria-->
+    <div class="title-container">
+      <div>
+        <h1 class="maintitle"><a class="maintitle" href="index.html">Anabella Avena</a></h1>
       </div>
-      <section data-aos="fade-left" data-aos-delay="10" data-aos-offset="300" data-aos-duration="1500"
-        class="intro fondo-articulo">
-        <article class="intro-article">
-          <h2><b>¡Hola!</b></h2><br>
-          Soy Anabella, Ilustradora Freelance de Argentina,
-          actualmente viviendo en Mendoza.<br>
-          <br>
-          ¿Estás buscando ilustracones para la portada de un libro,
-          trabajos editoriales o ilustraciones para notas?<br>
-          <br>
-          ¿Y qué tal ilustraciones aplicadas a productos,
-          exhibiciones y tiendas de arte?<br>
-          <br>
-          Podés contactarme escribiendome <b>anabellaavena@gmail.com</b> para que charlemos sobre lo que
-          estás
-          buscando.
-        </article>
-      </section>
+      <div>
+        <p class="subtitle">Ilustradora Freelance</p>
+      </div>
     </div>
-    <section class="grid-air"></section>
-    <div class="content-three-grid-index">
-      <section class="muestra-container">
-        <div class="card" style="width: 18rem;">
-          <img src="resources/images/trabajos/sanvalentin2020 IG2.jpg" class="card-img-top" alt="san valentin">
-          <div class="card-body">
-            <h5 class="card-title">San Valentín 2020</h5>
-            <p class="card-text">Tarjetas personalizadas para eventos especiales.</p>
-            <!-- Button trigger modal -->
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">
-              Ver la imagen
-            </button>
+    <nav class="redes-sociales-nav-top">
+      <ul class="redes-sociales-top">
+        <li class="enlaces"><a href="https://www.instagram.com/anabella.avena/" target="_blank"><img class="links"
+              src="resources/images/icons/instagram-logo.svg" alt="link a instagram"></a>
+        </li>
+        <li class="enlaces"><a href="https://www.youtube.com/channel/UCHDV9ojnI9Jy6XNFyAB9Jlw" target="_blank"><img
+              class="links" src="resources/images/icons/youtube-logo.svg" alt="link a youtube"></a>
+        </li>
+        <li class="enlaces"><a href="mailto:anabellaavena@gmail.com" target="_blank"><img class="links"
+              src="resources/images/icons/sobre-logo.svg" alt="link a email"></a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <!-- fin de header -->
 
-            <!-- Modal -->
-            <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false"
-              tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="staticBackdropLabel">San Valentín 2020</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body">
-                    <img src="resources/images/trabajos/sanvalentin2020.jpg" alt="san valentín">
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Fin de Modal -->
+  <!-- menú principal -->
+  <div class="menu-grid-index">
+    <nav class="navbar navbar-expand-md fondo-menu">
+      <div class="container-fluid d-flex justify-content-end">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a aria-current="page" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a aria-current="page" href="about-me.html">Sobre Mí</a>
+            </li>
+            <li class="nav-item">
+              <a aria-current="page" href="https://akikodarlian.blogspot.com/" target="_blank">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a aria-current="page" href="tienda.html">Tienda</a>
+            </li>
+            <li class="nav-item">
+              <a aria-current="page" href="contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <!-- fin de menú principal -->
+
+  <div class="content-one-grid-index d-flex justify-content-center">
+    <!-- carrousel -->
+    <section class="carousel-container">
+      <div id="carouselExampleCaptions" class="carousel slide carousel-fade justify-content-center"
+        data-bs-ride="false">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+            aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="resources/images/portfolio/lulu_martins/lulumartinschallenge.jpg" class="d-block w-100"
+              alt="lulu martins">
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="resources/images/portfolio/six_fanarts/Six Fanarts 6B.jpg" class="d-block w-100"
+              alt="six fanarts">
+
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="resources/images/portfolio/revista_chicos/RCHicos16 Tapa - Color Portada JPG.jpg"
+              class="d-block w-100" alt="revista chicos 16">
+
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="resources/images/portfolio/soppelsa/Sitio Web 22 06 IMG 1 Inicio 2 Galería 6.jpg"
+              class="d-block w-100" alt="soppelsa">
           </div>
         </div>
-        <div class="card" style="width: 18rem;">
-          <img src="resources/images/trabajos/minutemen.jpg" class="card-img-top" alt="Minutemen">
-          <div class="card-body">
-            <h5 class="card-title">Minutemen</h5>
-            <p class="card-text">Fanarts de mis series, peliculas y comics favoritos.</p>
-            <!-- Button trigger modal -->
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
-              Ver la imagen
-            </button>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <!-- fin de carrousel -->
+  </div>
 
-            <!-- Modal -->
-            <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false"
-              tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="staticBackdropLabel">Minutemen</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body">
-                    <img src="resources/images/trabajos/minutemen.jpg" alt="Minutemen">
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Fin de Modal -->
-          </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-          <img src="resources/images/trabajos/illustracion.jpg" class="card-img-top" alt="Ilustracion">
-          <div class="card-body">
-            <h5 class="card-title">Ilustraciones</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-            <!-- Button trigger modal -->
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop3">
-              Ver la imagen
-            </button>
-
-            <!-- Modal -->
-            <div class="modal fade" id="staticBackdrop3" data-bs-backdrop="static" data-bs-keyboard="false"
-              tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="staticBackdropLabel">Ilustracion</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body">
-                    <img src="resources/images/trabajos/illustracion.jpg" alt="Ilustracion">
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Fin de Modal -->
-          </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-          <img src="resources/images/trabajos/historieta.jpg" class="card-img-top" alt="Historieta">
-          <div class="card-body">
-            <h5 class="card-title">Historietas</h5>
-            <p class="card-text">Historietas y ocurrencias mías.</p>
-            <!-- Button trigger modal -->
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop4">
-              Ver la imagen
-            </button>
-
-            <!-- Modal -->
-            <div class="modal fade" id="staticBackdrop4" data-bs-backdrop="static" data-bs-keyboard="false"
-              tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="staticBackdropLabel">Historieta</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body">
-                    <img src="resources/images/trabajos/historieta.jpg" alt="historieta">
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Fin de Modal -->
-          </div>
-        </div>
-      </section>
+  <div class="content-two-grid-index">
+    <div class="barra">
+      <!-- barra divisoria-->
     </div>
-    <div class="footer-grid-index">
-      <!-- inicio de footer -->
-      <footer>
-        <div>
-          <p><b>¡Gracias!</b></p>
+    <section class="intro fondo-articulo">
+      <article class="intro-article">
+        <h2><b>¡Hola!</b></h2><br>
+        Soy Anabella, Ilustradora Freelance de Argentina,
+        actualmente viviendo en Mendoza.<br>
+        <br>
+        ¿Estás buscando ilustracones para la portada de un libro,
+        trabajos editoriales o ilustraciones para notas?<br>
+        <br>
+        ¿Y qué tal ilustraciones aplicadas a productos,
+        exhibiciones y tiendas de arte?<br>
+        <br>
+        Podés contactarme escribiendome <b>anabellaavena@gmail.com</b> para que charlemos sobre lo que
+        estás
+        buscando.
+      </article>
+    </section>
+  </div>
+
+  <!-- comienzo de tarjetas -->
+  <div class="content-three-grid-index">
+    <div class="card" style="width: 18rem;">
+      <img src="resources/images/portfolio/san_valentin_espacial/sanvalentin2020 IG2.jpg" class="card-img-top"
+        alt="san valentin">
+      <div class="card-body">
+        <h5 class="card-title">San Valentín 2020</h5>
+        <p class="card-text">Tarjetas personalizadas para eventos especiales.</p>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">
+          Ver la imagen
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+          aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">San Valentín 2020</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img src="resources/images/portfolio/san_valentin_espacial/sanvalentin2020 IG2.jpg" alt="san valentín">
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">cerrar</button>
+              </div>
+            </div>
+          </div>
         </div>
-        <div><img class="imagen-despedida" src="resources/images/logos/PerfilC1.png" alt="imagen despedida con gato">
+        <!-- Fin de Modal -->
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="resources/images/portfolio/revista_chicos/Sitio Web 22 06 IMG 1 Inicio 2 Galería 1.jpg"
+        class="card-img-top" alt="Revista chicos">
+      <div class="card-body">
+        <h5 class="card-title">Portada de Revista chicos</h5>
+        <p class="card-text">Ilustracion n° 06</p>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
+          Ver la imagen
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+          aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Portada de Revista chicos</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img src="resources/images/portfolio/revista_chicos/Sitio Web 22 06 IMG 1 Inicio 2 Galería 1.jpg"
+                  alt="Minutemen">
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">cerrar</button>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="redes-sociales-container">
-          <nav class="redes-sociales-nav">
-            <ul class="redes-sociales">
-              <li class="enlaces"><a href="mailto:anabellaavena@gmail.com"><img class="links"
-                    src="resources/images/icons/sobre-logo.svg" alt="link a email"></a>
-              </li>
-              <li class="enlaces"><a href="http://www.instagram.com"><img class="links"
-                    src="resources/images/icons/instagram-logo.svg" alt="link a instagram"></a>
-              </li>
-              <li class="enlaces"><a href="http://www.youtube.com"><img class="links"
-                    src="resources/images/icons/youtube-logo.svg" alt="link a youtube"></a>
-              </li>
-              <li class="enlaces"><a href="http://www.pinterest.com"><img class="links"
-                    src="resources/images/icons/pinterest-logo.svg" alt="link a pinterest"></a>
-              </li>
-              <li class="enlaces"><a href="http://www.patreon.com"><img class="links"
-                    src="resources/images/icons/patreon-logo.svg" alt="link a patreon"></a></li>
-            </ul>
-          </nav>
+        <!-- Fin de Modal -->
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="resources/images/portfolio/noche_verano/Noche de Verano Lucio.jpg" class="card-img-top"
+        alt="Ilustracion">
+      <div class="card-body">
+        <h5 class="card-title">Noche de Verano</h5>
+        <p class="card-text">Una cadena de sucesos mágicos</p>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop3">
+          Ver la imagen
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+          aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Noche de Verano</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img src="resources/images/portfolio/noche_verano/Noche de Verano Lucio.jpg" alt="Ilustracion">
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">cerrar</button>
+              </div>
+            </div>
+          </div>
         </div>
+        <!-- Fin de Modal -->
+      </div>
+    </div>
+  </div>
+
+  <!-- inicio de footer -->
+  <footer class="footer-grid-index">
+    <div class="footer-container">
+      <div><img class="imagen-despedida" src="resources/images/logos/PerfilC1.png" alt="imagen despedida con gato">
+      </div>
+      <div class="redes-sociales-container">
+        <nav class="redes-sociales-nav">
+          <ul class="redes-sociales">
+            <li class="enlaces"><a href="https://www.instagram.com/anabella.avena/" target="_blank"><img class="links"
+                  src="resources/images/icons/instagram-logo.svg" alt="link a instagram"></a>
+            </li>
+            <li class="enlaces"><a href="https://www.youtube.com/channel/UCHDV9ojnI9Jy6XNFyAB9Jlw" target="_blank"><img
+                  class="links" src="resources/images/icons/youtube-logo.svg" alt="link a youtube"></a>
+            </li>
+            <li class="enlaces"><a href="mailto:anabellaavena@gmail.com" target="_blank"><img class="links"
+                  src="resources/images/icons/sobre-logo.svg" alt="link a email"></a>
+            </li>
+          </ul>
+        </nav>
         <div class="legal">
           <p><b>© Anabella Avena 2022. All rights Reserved.</b></p>
         </div>
-      </footer>
-      <!-- fin de footer -->
+        <div><a class="ir-al-inicio" href="#header">ir al inicio</a></div>
+      </div>
     </div>
-  </div>
+  </footer>
+  <!-- fin de footer -->
 
   <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
-  </script>
-
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
   </script>
 </body>
 

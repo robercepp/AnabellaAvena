@@ -10,283 +10,921 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
-    <!-- AOS -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 
     <title>Portfolio</title>
 </head>
 
-<body>
-    <div class="grid-container-portfolio">
-        <div class="header-grid-portfolio">
-            <!-- inicio de header -->
-            <header class="header-container">
-                <div class="logo-container"><a href="index.html"><img class="main-logo"
-                            src="resources/images/logos/PerfilD1.png" alt="Logo principal de home"></a></div>
-                <div class="title-container">
-                    <div>
-                        <h1 class="maintitle"><a class="maintitle" href="index.html">Anabella Avena</a></h1>
-                    </div>
-                    <div>
-                        <p class="subtitle">Ilustradora & Diseñadora Gráfica</p>
-                    </div>
-                </div>
-            </header>
-            <!-- fin de header -->
+<body class="grid-container-portfolio">
+    <!-- inicio de header -->
+    <header class="header-grid-portfolio" id="header">
+        <div class="logo-container"><a href="index.html"><img class="main-logo"
+                    src="resources/images/logos/PerfilF1.png" alt="Logo principal de home"></a>
         </div>
-        <div class="menu-grid-portfolio">
-            <!-- menú principal -->
-            <nav class="navbar navbar-expand-md fondo-menu">
-                <div class="container-fluid d-flex justify-content-end">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a aria-current="page" href="inicio.html">Inicio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a aria-current="page" href="portfolio.html">Portfolio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a aria-current="page" href="about-me.html">Sobre Mí</a>
-                            </li>
-                            <li class="nav-item">
-                                <a aria-current="page" href="tienda.html">Tienda</a>
-                            </li>
-                            <li class="nav-item">
-                                <a aria-current="page" href="contacto.html">Contacto</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-            <!-- fin de menú principal -->
+        <div class="title-container">
+            <div>
+                <h1 class="maintitle"><a class="maintitle" href="index.html">Anabella Avena</a></h1>
+            </div>
+            <div>
+                <p class="subtitle">Ilustradora Freelance</p>
+            </div>
         </div>
-        <div class="content-one-grid-portfolio">
+        <nav class="redes-sociales-nav-top">
+            <ul class="redes-sociales-top">
+                <li class="enlaces"><a href="https://www.instagram.com/anabella.avena/" target="_blank"><img
+                            class="links" src="resources/images/icons/instagram-logo.svg" alt="link a instagram"></a>
+                </li>
+                <li class="enlaces"><a href="https://www.youtube.com/channel/UCHDV9ojnI9Jy6XNFyAB9Jlw"
+                        target="_blank"><img class="links" src="resources/images/icons/youtube-logo.svg"
+                            alt="link a youtube"></a>
+                </li>
+                <li class="enlaces"><a href="mailto:anabellaavena@gmail.com" target="_blank"><img class="links"
+                            src="resources/images/icons/sobre-logo.svg" alt="link a email"></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- fin de header -->
 
-            <!-- comienzo de tarjeta -->
-            <div class="card mb-3" style="max-width: 500px;">
-                <div class="row g-0 align-middle">
-                    <div class="col-md-4 imagen-card-container">
-                        <img src="resources/images/ejemplo1.jpg" class="rounded-start imagen-card" alt="Porfolio 1">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title">Ejemplo 1</h5>
-                            <p class="card-text">El contenido del portfolio será agregado mas adelante</p>
-                            <!-- Button trigger modal -->
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                data-bs-target="#staticBackdrop1">
-                                Ver la imagen
-                            </button>
+    <!-- menú principal -->
+    <div class="menu-grid-index">
+        <nav class="navbar navbar-expand-md fondo-menu">
+            <div class="container-fluid d-flex justify-content-end">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a aria-current="page" href="portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a aria-current="page" href="about-me.html">Sobre Mí</a>
+                        </li>
+                        <li class="nav-item">
+                            <a aria-current="page" href="https://akikodarlian.blogspot.com/" target="_blank">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a aria-current="page" href="tienda.html">Tienda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a aria-current="page" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- fin de menú principal -->
 
-                            <!-- Modal -->
-                            <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static"
-                                data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
-                                aria-hidden="true">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="staticBackdropLabel">Ejemplo 1</h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <img src="resources/images/ejemplo1.jpg" alt="Ejemplo 1">
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary"
-                                                data-bs-dismiss="modal">Close</button>
-                                        </div>
+    <!-- contenido de la pagina -->
+    <div class="content-one-grid-portfolio">
+
+        <!-- inicio de tarjeta -->
+        <div class="img-card">
+            <img class="img-muestra"
+                src="resources/images/portfolio/revista_chicos/Ilustración Nitrógeno - corrección png.png"
+                alt="Revista chicos">
+            <button type="button" class="descripcion" data-bs-toggle="modal" data-bs-target="#revista-chicos">
+                Revista CHicos
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="revista-chicos" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-xl modal-fullscreen-lg-down modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <!-- el contenido del modal va aquí -->
+                            <div class="container-fluid">
+                                <div class="row d.flex flex-column-reverse flex-md-row">
+                                    <div class="col-12 col-md-6 modal-structure-image"><img
+                                            src="resources/images/portfolio/revista_chicos/DSC01569.JPG" alt=""></div>
+                                    <div class="col-12 col-md-6 modal-structure-text">
+                                        <h3>Revista "CHicos de Ciencia Hoy"</h3>
+                                        <article>Serie de portadas, contratapas y notas realizadas para la Revista
+                                            CHicos. <br>
+                                            <br>
+                                            Esta Revista se caracteriza por tratar temas científicos dirijidos a un
+                                            público preadolescente, por lo que antes de empezar a bocetar siempre ha
+                                            sido importante hacer una investigación e informarme bien sobre los temas
+                                            que estoy trabajando en cada ilustración. <br>
+                                            <br>
+                                            Además, los personajes deben reflejar una edad similar a la de los lectores
+                                            y características físicas diversas para que éstos puedan sentirse
+                                            identificados. <br>
+                                            <br>
+                                            Cada nuevo número que me llega para ilustrar es un desafío que me hace
+                                            crecer como ilustradora.</article>
                                     </div>
                                 </div>
+                                <div class="row">
+                                    <div class="col-12 modal-structure-image"><img
+                                            src="resources/images/portfolio/revista_chicos/DSC01570.JPG" alt=""></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 modal-structure-image"><img
+                                            src="resources/images/portfolio/revista_chicos/DSC01584.JPG" alt=""></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 modal-structure-image"><img
+                                            src="resources/images/portfolio/revista_chicos/DSC01601.JPG" alt=""></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 modal-structure-image"><img
+                                            src="resources/images/portfolio/revista_chicos/DSC01603.JPG" alt=""></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 modal-structure-image"><img
+                                            src="resources/images/portfolio/revista_chicos/DSC01609.JPG" alt=""></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 modal-structure-image"><img
+                                            src="resources/images/portfolio/revista_chicos/Ilustración Nitrógeno - corrección png.png"
+                                            alt=""></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 modal-structure-image"><img
+                                            src="resources/images/portfolio/revista_chicos/Ilustración Nitrógeno 2 - corrección png.png"
+                                            alt=""></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 modal-structure-image"><img
+                                            src="resources/images/portfolio/revista_chicos/Ilustración Nitrógeno 3 - corrección png.png"
+                                            alt=""></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 modal-structure-image"><img
+                                            src="resources/images/portfolio/revista_chicos/Ilustración Rabia CHicos - doble página corrección png.png"
+                                            alt=""></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 modal-structure-image"><img
+                                            src="resources/images/portfolio/revista_chicos/Ilustración Rabia CHicos - doble página ejemplo.jpg"
+                                            alt=""></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 modal-structure-image"><img
+                                            src="resources/images/portfolio/revista_chicos/Ilustración Tecnologías del futuro jpg v2.jpg"
+                                            alt=""></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 modal-structure-image"><img
+                                            src="resources/images/portfolio/revista_chicos/RCHicos12.jpg" alt=""></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 modal-structure-image"><img
+                                            src="resources/images/portfolio/revista_chicos/RCHicos13.jpg" alt=""></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 modal-structure-image"><img
+                                            src="resources/images/portfolio/revista_chicos/RCHicos16 Tapa - Color Portada JPG.jpg"
+                                            alt=""></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 modal-structure-image"><img
+                                            src="resources/images/portfolio/revista_chicos/RCHicos17 Contraportada JPG.jpg"
+                                            alt=""></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 modal-structure-image"><img
+                                            src="resources/images/portfolio/revista_chicos/RCHicos18 Contratapa JPG.jpg"
+                                            alt=""></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 modal-structure-image"><img
+                                            src="resources/images/portfolio/revista_chicos/Sitio Web 22 06 IMG 1 Inicio 2 Galería 1.jpg"
+                                            alt=""></div>
+                                </div>
+
                             </div>
-                            <!-- Fin de Modal -->
+                            <!-- el contenido del modal termina aquí -->
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">cerrar</button>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- fin de tarjeta  -->
-
-            <!-- comienzo de tarjeta -->
-            <div class="card mb-3" style="max-width: 500px;">
-                <div class="row g-0">
-                    <div class="col-md-4 imagen-card-container">
-                        <img src="resources/images/portfolio/penny.jpg" class="rounded-start imagen-card" alt="penny">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title">Penny</h5>
-                            <p class="card-text">Aquí va una descripción del trabajo a pedido</p>
-                            <!-- Button trigger modal -->
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                data-bs-target="#staticBackdrop2">
-                                Ver la imagen
-                            </button>
-
-                            <!-- Modal -->
-                            <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static"
-                                data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
-                                aria-hidden="true">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="staticBackdropLabel">Penny</h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <img src="resources/images/portfolio/penny.jpg" alt="Penny">
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary"
-                                                data-bs-dismiss="modal">Close</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Fin de Modal -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- fin de tarjeta  -->
+            <!-- Fin de Modal -->
         </div>
+        <!-- fin de tarjeta -->
 
-        <div class="content-two-grid-portfolio">
-            <!-- comienzo de tarjeta -->
-            <div class="card mb-3" style="max-width: 500px;">
-                <div class="row g-0 align-middle">
-                    <div class="col-md-4 imagen-card-container">
-                        <img src="resources/images/portfolio/sketch2.jpg" class="rounded-start imagen-card" alt="sketch 2">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title">Sketch 2</h5>
-                            <p class="card-text">El contenido del portfolio será agregado mas adelante</p>
-                            <!-- Button trigger modal -->
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                data-bs-target="#staticBackdrop3">
-                                Ver la imagen
-                            </button>
-
-                            <!-- Modal -->
-                            <div class="modal fade" id="staticBackdrop3" data-bs-backdrop="static"
-                                data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
-                                aria-hidden="true">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="staticBackdropLabel">Sketch 2</h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <img src="resources/images/portfolio/sketch2.jpg" alt="Sketch 2">
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary"
-                                                data-bs-dismiss="modal">Close</button>
-                                        </div>
+        <!-- inicio de tarjeta -->
+        <div class="img-card">
+            <img class="img-muestra" src="resources/images/portfolio/lulu_martins/lulumartinschallenge.jpg"
+                alt="Lulu Martins">
+            <button type="button" class="descripcion" data-bs-toggle="modal" data-bs-target="#lulu-martins">
+                Lulu Martins
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="lulu-martins" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-xl modal-fullscreen-lg-down modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <!-- el contenido del modal va aquí -->
+                            <div class="container-fluid">
+                                <div class="row d.flex flex-column-reverse flex-md-row">
+                                    <div class="col-12 col-md-6 modal-structure-image">
+                                        <img src="resources/images/portfolio/lulu_martins/lulumartinschallenge.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="col-12 col-md-6 modal-structure-text">
+                                        <h3>Desafío Lulú Martins</h3>
+                                        <article>Después de sacar su colección otoño-invierno 2020, basada en el
+                                            movimiento pictórico surrealista, historias como las de "El Principito", y
+                                            música como el jazz de Nina Simone; las chicas de la marca Lulú Martins
+                                            decidieron lanzar un desafío artístico en el que invitaban a realizar
+                                            ilustraciones basadas en las fotografías de sus redes sociales.<br>
+                                            <br>
+                                            Dado que esta marca me parece extremadamente inspiradora, me decidí a
+                                            participar eligiendo esta fotografía de su muro: <a
+                                                href="https://www.instagram.com/p/B-ah2LVHYws/" target="_blank">click
+                                                aquí</a>
+                                        </article>
                                     </div>
                                 </div>
                             </div>
-                            <!-- Fin de Modal -->
+                            <!-- el contenido del modal termina aquí -->
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">cerrar</button>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- fin de tarjeta  -->
-
-            <!-- comienzo de tarjeta -->
-            <div class="card mb-3" style="max-width: 500px;">
-                <div class="row g-0 align-middle">
-                    <div class="col-md-4 imagen-card-container">
-                        <img src="resources/images/trabajos/sanvalentin2019 BG1.jpg" class="rounded-start imagen-card" alt="San valentin 2019">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title">San Valentín 2019</h5>
-                            <p class="card-text">El contenido del portfolio será agregado mas adelante</p>
-                            <!-- Button trigger modal -->
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                data-bs-target="#staticBackdrop4">
-                                Ver la imagen
-                            </button>
-
-                            <!-- Modal -->
-                            <div class="modal fade" id="staticBackdrop4" data-bs-backdrop="static"
-                                data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
-                                aria-hidden="true">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="staticBackdropLabel">San Valentín 2019</h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <img src="resources/images/trabajos/sanvalentin2019 BG1.jpg" alt="San Valentin 2019">
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary"
-                                                data-bs-dismiss="modal">Close</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Fin de Modal -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- fin de tarjeta  -->
+            <!-- Fin de Modal -->
         </div>
+        <!-- fin de tarjeta -->
 
-        <!-- inicio de footer -->
-        <div class="footer-grid-portfolio">
+        <!-- inicio de tarjeta -->
+        <div class="img-card">
+            <img class="img-muestra" src="resources/images/portfolio/christine_hug/wallpaper chris 100dpi.jpg"
+                alt="Christine hug">
+            <button type="button" class="descripcion" data-bs-toggle="modal" data-bs-target="#christine-hug">
+                Christine Hug
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="christine-hug" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-xl modal-fullscreen-lg-down modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <!-- el contenido del modal va aquí -->
+                            <div class="container-fluid">
+                                <div class="row d.flex flex-column-reverse flex-md-row">
+                                    <div class="col-12 col-md-6 modal-structure-image">
+                                        <img src="resources/images/portfolio/christine_hug/wallpaper chris 100dpi.jpg"
+                                            alt="christine hug">
+                                    </div>
+                                    <div class="col-12 col-md-6 modal-structure-text">
+                                        <h3>Wallpaper para Youtuber</h3>
+                                        <article>
+                                            Wallpaper inspirado en la youtuber española Christine Hug.
+                                        </article>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- el contenido del modal termina aquí -->
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Fin de Modal -->
+        </div>
+        <!-- fin de tarjeta -->
 
-            <footer>
-                <div>
-                    <p><b>¡Gracias!</b></p>
+        <!-- inicio de tarjeta -->
+        <div class="img-card">
+            <img class="img-muestra" src="resources/images/portfolio/de_las_cenizas/RAYBRADBURY.jpg" alt="ray bradbury">
+            <button type="button" class="descripcion" data-bs-toggle="modal" data-bs-target="#ray-bradbury">
+                De las Cenizas Volverás
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="ray-bradbury" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-xl modal-fullscreen-lg-down modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <!-- el contenido del modal va aquí -->
+                            <div class="container-fluid">
+                                <div class="row d.flex flex-column-reverse flex-md-row">
+                                    <div class="col-12 col-md-6 modal-structure-image"><img
+                                            src="resources/images/portfolio/de_las_cenizas/RAYBRADBURY.jpg"
+                                            alt="ray bradbury"></div>
+                                    <div class="col-12 col-md-6 modal-structure-text">
+                                        <h3>"De las cenizas volverás" de Ray Bradbury</h3>
+                                        <article>Hace unos años, mi hermana, que es fan de Ray Bradbury, me prestó este
+                                            libro, y quedé tan encantada por la historia. Cada personaje estaba relatado
+                                            con tanto color que que podía verlos vívidamente en mi cabeza. Así que no
+                                            esperé. Corrí por mis pinceles y mis acuarelas a plasmar estas imágenes.<br>
+                                            <br>
+                                            Más tarde subí el proceso de estas acuarelas a mi Blog. Podés encontrarlo en
+                                            el siguiente link: <a
+                                                href="https://akikodarlian.blogspot.com/2020/02/from-dust-returned-by-ray-bradbury.html"
+                                                target="_blank">click
+                                                aquí</a>
+                                        </article>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 modal-structure-image"><img
+                                            src="resources/images/portfolio/de_las_cenizas/DSC01369.jpg" alt=""></div>
+                                </div>
+                            </div>
+                            <!-- el contenido del modal termina aquí -->
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">cerrar</button>
+                        </div>
+                    </div>
                 </div>
-                <div><img class="imagen-despedida" src="resources/images/logos/PerfilC1.png"
-                        alt="imagen despedida con gato">
+            </div>
+            <!-- Fin de Modal -->
+        </div>
+        <!-- fin de tarjeta -->
+
+        <!-- inicio de tarjeta -->
+        <div class="img-card">
+            <img class="img-muestra" src="resources/images/portfolio/noche_verano/Noche de Verano Lucio.jpg"
+                alt="Noche de Verano">
+            <button type="button" class="descripcion" data-bs-toggle="modal" data-bs-target="#noche-de-verano">
+                Noche de Verano
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="noche-de-verano" data-bs-backdrop="static" data-bs-keyboard="false"
+                tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-xl modal-fullscreen-lg-down modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <!-- el contenido del modal va aquí -->
+                            <div class="container-fluid">
+                                <div class="row d.flex flex-column-reverse flex-md-row">
+                                    <div class="col-12 col-md-6 modal-structure-image">
+                                        <img src="resources/images/portfolio/noche_verano/Noche de Verano Lucio.jpg"
+                                            alt="noche de verano">
+                                    </div>
+                                    <div class="col-12 col-md-6 modal-structure-text">
+                                        <h3>Relato "Noche de verano" de Lucio Di Giacomo Noak</h3>
+                                        <article>Esta ilustración es el resultado de una cadena de sucesos mágicos. <br>
+                                            <br>
+                                            Cuando mandé mi primer mail a la Revista CHicos de Ciencia Hoy, sabía que
+                                            conocería muy buena gente pero nunca imaginé que terminaría siendo amiga por
+                                            carta de la asistente de edición, Orne. <br>
+                                            <br>
+                                            La pareja de Orne realizó un desafío de escritura a principios de 2021, cuyo
+                                            resultado fue un relato muy divertido acerca de una familia y su visita al
+                                            circo. <br>
+                                            <br>
+                                            Con la intención de felicitar a Lucio por su constante trabajo y éxito en el
+                                            desafío de escritura, Orne decidió hacerle un regalo y pensó en encargarme
+                                            esta ilustración a mí. <br>
+                                            <br>
+                                            ¿No te resulta curiosa la manera en la que suceden las cosas?
+                                        </article>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- el contenido del modal termina aquí -->
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">cerrar</button>
+                        </div>
+                    </div>
                 </div>
-                <div class="redes-sociales-container">
-                    <nav class="redes-sociales-nav">
-                        <ul class="redes-sociales">
-                            <li class="enlaces"><a href="mailto:anabellaavena@gmail.com"><img class="links"
-                                        src="resources/images/icons/sobre-logo.svg" alt="link a email"></a>
-                            </li>
-                            <li class="enlaces"><a href="http://www.instagram.com"><img class="links"
-                                        src="resources/images/icons/instagram-logo.svg" alt="link a instagram"></a>
-                            </li>
-                            <li class="enlaces"><a href="http://www.youtube.com"><img class="links"
-                                        src="resources/images/icons/youtube-logo.svg" alt="link a youtube"></a>
-                            </li>
-                            <li class="enlaces"><a href="http://www.pinterest.com"><img class="links"
-                                        src="resources/images/icons/pinterest-logo.svg" alt="link a pinterest"></a>
-                            </li>
-                            <li class="enlaces"><a href="http://www.patreon.com"><img class="links"
-                                        src="resources/images/icons/patreon-logo.svg" alt="link a patreon"></a></li>
-                        </ul>
-                    </nav>
+            </div>
+            <!-- Fin de Modal -->
+        </div>
+        <!-- fin de tarjeta -->
+
+        <!-- inicio de tarjeta -->
+        <div class="img-card">
+            <img class="img-muestra" src="resources/images/portfolio/pads_girls/Omaigat Pads - colorGrunge.png"
+                alt="pad girls">
+            <button type="button" class="descripcion" data-bs-toggle="modal" data-bs-target="#pad-girls">
+                Pads Girls and Cats
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="pad-girls" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-xl modal-fullscreen-lg-down modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <!-- el contenido del modal va aquí -->
+                            <div class="container-fluid">
+                                <div class="row d.flex flex-column-reverse flex-md-row">
+                                    <div class="col-12 col-md-6 modal-structure-image"><img
+                                            src="resources/images/portfolio/pads_girls/Omaigat Pads - colorartsy.png"
+                                            alt=""></div>
+                                    <div class="col-12 col-md-6 modal-structure-text">
+                                        <h3>Pads Girls and Cats</h3>
+                                        <article>Este es uno de mis proyectos favoritos. Desarrollé este proyecto a
+                                            pedido de una tienda Mendocina de venta de artículos para Gamers.<br>
+                                            <br>
+                                            La idea original brindada por los dueños de la tienda, era realizar la
+                                            ilustración de 5 gatitos de distintas razas y con personalidades únicas para
+                                            unos pad para PC con orejas de gato.<br>
+                                            <br>
+                                            Por un lado, los gatitos seguirían siendo los protagonistas de los pads.
+                                            Mientras que, por otro lado, las chicas que los acompañan representan un
+                                            avatar con un estilo particular, con el cual la persona que desea comprar el
+                                            pad pueda identificarse y conectar.<br>
+                                            <br>
+                                            De esta manera, el cliente no sólo está comprando un pad, sino que además
+                                            está adoptando a estos gatitos. ¿No te parece adorable?</article>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 modal-structure-image"><img
+                                            src="resources/images/portfolio/pads_girls/Omaigat Pads - colorFan.png"
+                                            alt=""></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 modal-structure-image"><img
+                                            src="resources/images/portfolio/pads_girls/Omaigat Pads - colorGrunge.png"
+                                            alt=""></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 modal-structure-image"><img
+                                            src="resources/images/portfolio/pads_girls/Omaigat Pads - colorTrendy.png"
+                                            alt=""></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 modal-structure-image"><img
+                                            src="resources/images/portfolio/pads_girls/Omaigat Pads - Final-01.jpg"
+                                            alt=""></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 modal-structure-image"><img
+                                            src="resources/images/portfolio/pads_girls/Omaigat Pads - Final-02.jpg"
+                                            alt=""></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 modal-structure-image"><img
+                                            src="resources/images/portfolio/pads_girls/Omaigat Pads - Final-03.jpg"
+                                            alt=""></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 modal-structure-image"><img
+                                            src="resources/images/portfolio/pads_girls/Omaigat Pads - Final-04.jpg"
+                                            alt=""></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 modal-structure-image"><img
+                                            src="resources/images/portfolio/pads_girls/Omaigat Pads - Final-05.jpg"
+                                            alt=""></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 modal-structure-image"><img
+                                            src="resources/images/portfolio/pads_girls/Sitio Web 22 06 IMG 1 Inicio 3 Proyecto Pads-12.png"
+                                            alt=""></div>
+                                </div>
+                            </div>
+                            <!-- el contenido del modal termina aquí -->
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">cerrar</button>
+                        </div>
+                    </div>
                 </div>
+            </div>
+            <!-- Fin de Modal -->
+        </div>
+        <!-- fin de tarjeta -->
+
+        <!-- inicio de tarjeta -->
+        <div class="img-card">
+            <img class="img-muestra"
+                src="resources/images/portfolio/panuelo_amantes_mariposa/Sitio Web 22 06 IMG 1 Inicio 2 Galería 2.jpg"
+                alt="amantes mariposa">
+            <button type="button" class="descripcion" data-bs-toggle="modal" data-bs-target="#amantes-mariposa">
+                "Amantes Mariposa"
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="amantes-mariposa" data-bs-backdrop="static" data-bs-keyboard="false"
+                tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-xl modal-fullscreen-lg-down modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <!-- el contenido del modal va aquí -->
+                            <div class="container-fluid">
+                                <div class="row d.flex flex-column-reverse flex-md-row">
+                                    <div class="col-12 col-md-6 modal-structure-image">
+                                        <img src="resources/images/portfolio/panuelo_amantes_mariposa/Sitio Web 22 06 IMG 1 Inicio 2 Galería 2.jpg"
+                                            alt="amantes mariposa">
+                                    </div>
+                                    <div class="col-12 col-md-6 modal-structure-text">
+                                        <h3>Pañuelo "Amantes Mariposa"</h3>
+                                        <article>En el 2020 participé en un concurso de Jopo y Wacom donde la consigna
+                                            era diseñar un pañuelo inspirado en un cuento tradicional de cualquier parte
+                                            del mundo.<br>
+                                            <br>
+                                            Yo me decidí por mi cuento favorito de la infancia que resultó ser un cuento
+                                            tradicional chino llamado "Los amantes mariposa" (Si no lo conoces, te
+                                            invito a buscarlo y leerlo, es genial).<br>
+                                            <br>
+                                            No gané el concurso pero igualmente terminé muy contenta de haber tenido la
+                                            oportunidad de ilustrar esta historia.
+                                        </article>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- el contenido del modal termina aquí -->
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Fin de Modal -->
+        </div>
+        <!-- fin de tarjeta -->
+
+        <!-- inicio de tarjeta -->
+        <div class="img-card">
+            <img class="img-muestra" src="resources/images/portfolio/san_valentin_espacial/sanvalentin2019 BG2.jpg"
+                alt="San Valentin">
+            <button type="button" class="descripcion" data-bs-toggle="modal" data-bs-target="#san-valentin">
+                San Valentín Espacial
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="san-valentin" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-xl modal-fullscreen-lg-down modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <!-- el contenido del modal va aquí -->
+                            <div class="container-fluid">
+                                <div class="row d.flex flex-column-reverse flex-md-row">
+                                    <div class="col-12 col-md-6 modal-structure-image"><img
+                                            src="resources/images/portfolio/san_valentin_espacial/sanvalentin2019 BG2.jpg"
+                                            alt=""></div>
+                                    <div class="col-12 col-md-6 modal-structure-text">
+                                        <h3>San Valentín espacial</h3>
+                                        <article>Ilustración realizada para tarjeta de San Valentín descargable e
+                                            imprimible.</article>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 modal-structure-image"><img
+                                            src="resources/images/portfolio/san_valentin_espacial/sanvalentin2019 BG1.jpg"
+                                            alt=""></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 modal-structure-image"><img
+                                            src="resources/images/portfolio/san_valentin_espacial/sanvalentin2020 IG2.jpg"
+                                            alt=""></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 modal-structure-image"><img
+                                            src="resources/images/portfolio/san_valentin_espacial/Sitio Web 22 06 IMG 1 Inicio 2 Galería 5.jpg"
+                                            alt=""></div>
+                                </div>
+                            </div>
+                            <!-- el contenido del modal termina aquí -->
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Fin de Modal -->
+        </div>
+        <!-- fin de tarjeta -->
+
+        <!-- inicio de tarjeta -->
+        <div class="img-card">
+            <img class="img-muestra" src="resources/images/portfolio/serie_chicas/IG06 23B.jpg" alt="San Valentin">
+            <button type="button" class="descripcion" data-bs-toggle="modal" data-bs-target="#chicas">
+                Serie Chicas para Instagram
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="chicas" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-xl modal-fullscreen-lg-down modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <!-- el contenido del modal va aquí -->
+                            <div class="container-fluid">
+                                <div class="row d.flex flex-column-reverse flex-md-row">
+                                    <div class="col-12 col-md-6 modal-structure-image"><img
+                                            src="resources/images/portfolio/serie_chicas/IG06 23B.jpg" alt=""></div>
+                                    <div class="col-12 col-md-6 modal-structure-text">
+                                        <h3>Serie Chicas para Instagram</h3>
+                                        <article>Realicé este proyecto personal como un estudio de color.<br>
+                                            Mi intención fue dibujar estas mujeres, de diversos razgos faciales,
+                                            utilizando una paleta cromática lo más limitada posible individualmente en
+                                            cada uno de los personajes; pero que al mismo tiempo, en una visión más
+                                            general, fuera evidente que todas forman parte del mismo sistema
+                                            gráfico.<br>
+                                            <br>
+                                            Los modelos en los que me basé para hacerlas fueron fotografías al azar que
+                                            encontré en alguna que otra revista, imágenes de pinterest, o inclusive
+                                            fotografías de algunas de mis cantantes favoritas, como SIA o Lianne La
+                                            Habas.
+                                        </article>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 modal-structure-image"><img
+                                            src="resources/images/portfolio/serie_chicas/IG06 24B.jpg" alt=""></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 modal-structure-image"><img
+                                            src="resources/images/portfolio/serie_chicas/IG06 25B.jpg" alt=""></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 modal-structure-image"><img
+                                            src="resources/images/portfolio/serie_chicas/IG06 26B.jpg" alt=""></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 modal-structure-image"><img
+                                            src="resources/images/portfolio/serie_chicas/IG07 27B.jpg" alt=""></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 modal-structure-image"><img
+                                            src="resources/images/portfolio/serie_chicas/IG07 28B.jpg" alt=""></div>
+                                </div>
+                            </div>
+                            <!-- el contenido del modal termina aquí -->
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Fin de Modal -->
+        </div>
+        <!-- fin de tarjeta -->
+
+        <!-- inicio de tarjeta -->
+        <div class="img-card">
+            <img class="img-muestra" src="resources/images/portfolio/six_fanarts/Six Fanarts 6B.jpg" alt="Seis Fanarts">
+            <button type="button" class="descripcion" data-bs-toggle="modal" data-bs-target="#seis-fanarts">
+                Desafío Seis Fanarts
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="seis-fanarts" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-xl modal-fullscreen-lg-down modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <!-- el contenido del modal va aquí -->
+                            <div class="container-fluid">
+                                <div class="row d.flex flex-column-reverse flex-md-row">
+                                    <div class="col-12 col-md-6 modal-structure-image"><img
+                                            src="resources/images/portfolio/six_fanarts/Six Fanarts 6B.jpg" alt="">
+                                    </div>
+                                    <div class="col-12 col-md-6 modal-structure-text">
+                                        <h3>Desafío Seis fanarts</h3>
+                                        <article>Desafío realizado para Instagram.
+                                        </article>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 modal-structure-image"><img
+                                            src="resources/images/portfolio/six_fanarts/Sitio Web 22 06 IMG 1 Inicio 2 Galería 3.jpg"
+                                            alt=""></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 modal-structure-image"><img
+                                            src="resources/images/portfolio/six_fanarts/Six Fanarts 2 Toph B.jpg"
+                                            alt=""></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 modal-structure-image"><img
+                                            src="resources/images/portfolio/six_fanarts/Six Fanarts 3 Sailor Urano B.jpg"
+                                            alt=""></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 modal-structure-image"><img
+                                            src="resources/images/portfolio/six_fanarts/Six Fanarts 4 Alucard B.jpg"
+                                            alt=""></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 modal-structure-image"><img
+                                            src="resources/images/portfolio/six_fanarts/Six Fanarts 5 Perla B.jpg"
+                                            alt=""></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 modal-structure-image"><img
+                                            src="resources/images/portfolio/six_fanarts/Six Fanarts 6 Mary Poppins B +firma.jpg"
+                                            alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- el contenido del modal termina aquí -->
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">cerrar</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Fin de Modal -->
+        </div>
+        <!-- fin de tarjeta -->
+
+        <!-- inicio de tarjeta -->
+        <div class="img-card">
+            <img class="img-muestra" src="resources/images/portfolio/soppelsa/FDÑO Sopelsa - Color 1.png"
+                alt="cuorelato">
+            <button type="button" class="descripcion" data-bs-toggle="modal" data-bs-target="#cuorelato">
+                Cuorelato de Soppelsa
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="cuorelato" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-xl modal-fullscreen-lg-down modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <!-- el contenido del modal va aquí -->
+                            <div class="container-fluid">
+                                <div class="row d.flex flex-column-reverse flex-md-row">
+                                    <div class="col-12 col-md-6 modal-structure-image"><img
+                                            src="resources/images/portfolio/soppelsa/FDÑO Sopelsa - Color 1.png"
+                                            alt="soppelsa">
+                                    </div>
+                                    <div class="col-12 col-md-6 modal-structure-text">
+                                        <h3>Cuorelato de Soppelsa</h3>
+                                        <article>Ilustración realizada para campaña publicitaria de Heladería Ferruccio
+                                            Soppelsa para su nuevo producto Cuorelato. <br>
+                                            <br>
+                                            La idea principal de la campaña consistía en mujeres de diferentes partes
+                                            del mundo representadas por edificios y monumentos icónicoses, saboreando
+                                            este nuevo producto helado.
+                                        </article>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 modal-structure-image"><img
+                                            src="resources/images/portfolio/soppelsa/FDÑO Sopelsa - Color 2.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 modal-structure-image"><img
+                                            src="resources/images/portfolio/soppelsa/Sitio Web 22 06 IMG 1 Inicio 2 Galería 6.jpg"
+                                            alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- el contenido del modal termina aquí -->
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">cerrar</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Fin de Modal -->
+        </div>
+        <!-- fin de tarjeta -->
+
+        <!-- inicio de tarjeta -->
+        <div class="img-card">
+            <img class="img-muestra"
+                src="resources/images/portfolio/soppelsa-dos/FDÑO 21 12 Soppelsa NAVIDAD 300dpi Color NATALETAS v5 con pinitos.png"
+                alt="navidad-soppelsa">
+            <button type="button" class="descripcion" data-bs-toggle="modal" data-bs-target="#navidad-soppelsa">
+                Campaña de navidad para Ferruccio Soppelsa
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="navidad-soppelsa" data-bs-backdrop="static" data-bs-keyboard="false"
+                tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-xl modal-fullscreen-lg-down modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <!-- el contenido del modal va aquí -->
+                            <div class="container-fluid">
+                                <div class="row d.flex flex-column-reverse flex-md-row">
+                                    <div class="col-12 col-md-6 modal-structure-image"><img
+                                            src="resources/images/portfolio/soppelsa-dos/FDÑO 21 12 Soppelsa NAVIDAD 300dpi Color NATALETAS v5 con pinitos.png"
+                                            alt="navidad-soppelsa">
+                                    </div>
+                                    <div class="col-12 col-md-6 modal-structure-text">
+                                        <h3>Campaña de navidad para Ferruccio Soppelsa</h3>
+                                        <article>En vísperas de navidad del 2021 Fuentes Diseño (FDÑO) volvió a
+                                            contactarme para participar en una de sus campañas para la Heladería
+                                            Ferruccio Soppelsa.<br>
+                                            <br>
+                                            Podés ver la campaña: <a href="https://www.instagram.com/p/CX3oAhXrmKx/"
+                                                target="_blank">aquí</a> y <a
+                                                href="https://www.instagram.com/p/CXzGcJssoUW/" target="_blank">aquí</a>
+                                        </article>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 modal-structure-image"><img
+                                            src="resources/images/portfolio/soppelsa-dos/FDÑO 21 12 Soppelsa NAVIDAD 300dpi Color Cuorelato v4.png"
+                                            alt=""></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 modal-structure-image"><img
+                                            src="resources/images/portfolio/soppelsa-dos/269723866_1262139384290.jpg"
+                                            alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- el contenido del modal termina aquí -->
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">cerrar</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Fin de Modal -->
+        </div>
+        <!-- fin de tarjeta -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <!-- fin del contenido de la pagina -->
+
+    <!-- inicio de footer -->
+    <footer class="footer-grid-portfolio">
+        <div class="footer-container">
+            <div><img class="imagen-despedida" src="resources/images/logos/PerfilC1.png"
+                    alt="imagen despedida con gato">
+            </div>
+            <div class="redes-sociales-container">
+                <nav class="redes-sociales-nav">
+                    <ul class="redes-sociales">
+                        <li class="enlaces"><a href="https://www.instagram.com/anabella.avena/" target="_blank"><img
+                                    class="links" src="resources/images/icons/instagram-logo.svg"
+                                    alt="link a instagram"></a>
+                        </li>
+                        <li class="enlaces"><a href="https://www.youtube.com/channel/UCHDV9ojnI9Jy6XNFyAB9Jlw"
+                                target="_blank"><img class="links" src="resources/images/icons/youtube-logo.svg"
+                                    alt="link a youtube"></a>
+                        </li>
+                        <li class="enlaces"><a href="mailto:anabellaavena@gmail.com" target="_blank"><img class="links"
+                                    src="resources/images/icons/sobre-logo.svg" alt="link a email"></a>
+                        </li>
+                    </ul>
+                </nav>
                 <div class="legal">
                     <p><b>© Anabella Avena 2022. All rights Reserved.</b></p>
                 </div>
-            </footer>
+                <div><a class="ir-al-inicio" href="#header">ir al inicio</a></div>
+            </div>
         </div>
-        <!-- fin de footer -->
-    </div>
+    </footer>
+    <!-- fin de footer -->
 
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
