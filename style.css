@@ -1,5 +1,6 @@
-/* controles generales para todas las páginas */
+@charset "UTF-8";
 
+/* controles generales para todas las páginas */
 @font-face {
   font-family: "bree";
   src: url(resources/fonts/BreeSerif-Regular.ttf);
@@ -40,22 +41,22 @@
   margin: 0;
   text-decoration: none;
   font-family: "ruda-regular";
-  color: hsl(221, 56%, 31%);
+  color: #233f7b;
   list-style: none;
   font-size: 20px;
 }
 
 .fondo-menu {
-  background-color: hsl(45, 100%, 82%);
+  background-color: #ffe8a3;
 }
 
 .fondo-articulo {
-  background-color: hsl(210, 22%, 78%);
+  background-color: #bbc7d3;
 }
 
 .barra {
   background-color: darkgrey;
-  height: 3px;
+  height: 4px;
 }
 
 .productos-imagenes {
@@ -69,96 +70,117 @@
   z-index: 2;
   transition: all .3s ease-in;
   transform: scale(1.1);
-  box-shadow: 7px 7px 6px hsl(0, 0%, 70%)
+  box-shadow: 7px 7px 6px #b3b3b3;
 }
 
 .card {
   margin: 10px;
+  border: 1px solid #ffbf00;
+  box-shadow: 0 0 6px lightgray;
 }
 
 /* parametros de cabecera */
-.header-container {
-  display: flex;
-  /* <<=== no tocar*/
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-}
-
 .logo-container {
+  display: flex;
+  justify-content: flex-end;
   width: 30%;
-  max-width: 300px;
 }
 
 .main-logo {
   width: 100%;
+  max-width: 225px;
   position: relative;
-  top: 30px;
+  top: 33px;
   z-index: 3;
+}
+
+.main-logo:hover {
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.1) rotate(5deg);
 }
 
 .title-container {
   display: flex;
   flex-direction: column;
-  width: 70vw;
-  max-width: 500px;
+  height: 100%;
+  width: 40%;
+  max-width: 575px;
+  justify-content: center;
 }
 
 .title-container div {
   display: flex;
   justify-content: center;
   width: 100%;
+  text-align: center;
 }
 
 .maintitle {
   font-family: "bree";
   text-decoration: underline;
   text-underline-offset: 7px;
-  font-size: clamp(20px, 9vw, 70px);
+  font-size: clamp(13px, 5.2vw, 80px);
   margin-bottom: 15px;
+  vertical-align: middle;
 }
 
 .subtitle {
-  font-size: clamp(10px, 4vw, 25px);
+  font-size: clamp(17px, 2vw, 30px);
+}
+
+.redes-sociales-nav-top {
+  width: 30%;
+}
+
+.redes-sociales-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
 }
 
 /* Fin de parametros de cabecera */
-
 /* Parametros de Footer */
 footer {
   width: 100%;
   display: flex;
-  padding: 20px;
   flex-direction: column;
 }
 
-footer div {
+.footer-container {
   display: flex;
+  flex-direction: row;
   justify-content: center;
-  width: 100%;
+  align-items: center;
+}
+
+.redes-sociales-container {
+  display: flex;
+  flex-direction: column;
 }
 
 .imagen-despedida {
   width: 10rem;
-  margin-bottom: 10px;
 }
 
 .redes-sociales {
-  width: 100%;
-  max-width: 30rem;
   display: flex;
-  justify-content: space-evenly;
-  margin: 10px 0;
+  padding: 0px;
+  justify-content: flex-start;
+  width: 100%;
 }
 
 .redes-sociales-nav {
-  display: flex;
-  justify-content: center;
+  vertical-align: middle;
   width: 100%;
 }
 
+.enlaces {
+  display: flex;
+  justify-content: center;
+}
+
 .enlaces:hover {
-  transition: all .3s ease-in;
+  transition: all .4s ease-in;
   transform: scale(1.1);
 }
 
@@ -167,25 +189,22 @@ footer div {
   margin: 5px;
 }
 
-.legal {
-  margin-top: 20px;
-}
-
 .legal p b {
   font-family: "bree";
   font-size: clamp(12px, 1.7vw, 16px);
 }
 
+.ir-al-inicio {
+  font-size: 12px;
+}
+
 /* Fin de Parametros de footer */
-
 /* FIN DE PARAMETROS GENERALES PARA TODOS LOS HTML */
-
 /* Parametros específicos para index.html */
-/* parametros de grid */
 .grid-container-index {
   display: grid;
   grid-template-columns: 1fr 6fr 1fr;
-  grid-template-rows: repeat(4, auto) 250px repeat(2, auto);
+  grid-template-rows: repeat(6, auto);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
 }
@@ -197,6 +216,10 @@ footer div {
   background-position: top center;
   background-size: cover;
   background-attachment: fixed;
+  display: flex;
+  /* <<=== no tocar*/
+  justify-content: center;
+  align-items: flex-end;
 }
 
 .menu-grid-index {
@@ -214,21 +237,18 @@ footer div {
   grid-area: 4 / 1 / 5 / 4;
 }
 
-.grid-air {
-  grid-area: 5 / 1 / 6 / 4;
-  background-image: url(resources/images/backgrounds/background.jpg);
-  background-repeat: repeat;
-  background-position: top center;
-  background-size: cover;
-  background-attachment: fixed;
-}
-
 .content-three-grid-index {
-  grid-area: 6 / 2 / 7 / 3;
+  grid-area: 5 / 2 / 6 / 3;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .footer-grid-index {
-  grid-area: 7 / 1 / 8 / 4;
+  grid-area: 6 / 1 / 7 / 4;
   background-image: url(resources/images/backgrounds/background.jpg);
   background-repeat: repeat;
   background-position: top center;
@@ -236,10 +256,7 @@ footer div {
   background-attachment: fixed;
 }
 
-/* fin de parametros de grid */
-
 /* Parametros especiales de carrousel */
-
 .carousel-container {
   display: flex;
   justify-content: center;
@@ -247,7 +264,6 @@ footer div {
   padding: 15px;
   border-radius: 15px;
   margin: 10px 0;
-  box-shadow: 0px 0px 12px 0px lightgray;
 }
 
 .carousel {
@@ -256,6 +272,7 @@ footer div {
   z-index: 0;
 }
 
+/* Fin de Parametros especiales de carrousel */
 .intro {
   display: flex;
   justify-content: center;
@@ -268,135 +285,16 @@ footer div {
   text-align: center;
 }
 
-.muestra-container {
-  padding: 1.5rem;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
+.intro-article h2 b {
+  font-size: 50px;
 }
-
-.img-card {
-  display: flex;
-  flex-direction: column;
-  width: 250px;
-  justify-content: center;
-  height: 325px;
-  margin: 10px;
-  padding: 0%;
-}
-
-.descripcion {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 250px;
-  height: 75px;
-}
-
-.descripcion-texto {
-  text-align: center;
-  font-size: 12px;
-  opacity: 0;
-}
-
-.img-card:hover .descripcion-texto {
-  transition-delay: 0.5s;
-  transition: all 1s ease-in-out;
-  opacity: 1;
-  font-size: 14px;
-}
-
-.img-muestra {
-  width: 250px;
-  height: 250px;
-  object-fit: contain;
-}
-
-.img-muestra:hover {
-  transition: all 0.3s ease-in;
-  transform: scale(1.05);
-  box-shadow: 0 0 6px lightgray;
-}
-
 
 /* Fin de parametros específicos para Index.html */
-
-/* Parámetros para inicio.html */
-/* controles de grid */
-.grid-container-inicio {
-  display: grid;
-  grid-template-columns: 1fr 6fr 1fr;
-  grid-template-rows: repeat(4, auto);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-}
-
-.header-grid-inicio {
-  grid-area: 1 / 1 / 2 / 4;
-  background-image: url(resources/images/backgrounds/background.jpg);
-  background-repeat: repeat;
-  background-position: top center;
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-.menu-grid-inicio {
-  grid-area: 2 / 1 / 3 / 4;
-  position: sticky;
-  top: 0;
-  z-index: 2;
-}
-
-.content-one-grid-inicio {
-  grid-area: 3 / 2 / 4 / 3;
-  display: flex;
-  flex-direction: column;
-  border: 1px solid hsl(45, 100%, 82%);
-}
-
-.footer-grid-inicio {
-  grid-area: 4 / 1 / 5 / 4;
-  background-image: url(resources/images/backgrounds/background.jpg);
-  background-repeat: repeat;
-  background-position: top center;
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-/* fin de controles de grid */
-
-.seccion-titulo {
-  width: 100%;
-  display: flex;
-  justify-content: flex-start;
-  background-color: hsl(45, 100%, 75%);
-}
-
-.seccion-titulo h3 {
-  color: white;
-  margin: 5px 10px;
-}
-
-.seccion-container {
-  width: 100%;
-  padding: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-}
-
-/* Fin de parametros específicos para inicio.html */
-
 /* Parametros para Portfolio.Html */
-
-/* Parametros de grid */
 .grid-container-portfolio {
   display: grid;
   grid-template-columns: 1fr 6fr 1fr;
-  grid-template-rows: repeat(5, auto);
+  grid-template-rows: repeat(4, auto);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
 }
@@ -408,6 +306,11 @@ footer div {
   background-position: top center;
   background-size: cover;
   background-attachment: fixed;
+  display: flex;
+  /* <<=== no tocar*/
+  width: 100%;
+  justify-content: center;
+  align-items: flex-end;
 }
 
 .menu-grid-portfolio {
@@ -423,18 +326,11 @@ footer div {
   justify-content: space-evenly;
   flex-wrap: wrap;
   width: 100%;
-}
-
-.content-two-grid-portfolio {
-  grid-area: 4 / 2 / 5 / 3;
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  width: 100%;
+  padding: 70px;
 }
 
 .footer-grid-portfolio {
-  grid-area: 5 / 1 / 6 / 4;
+  grid-area: 4 / 1 / 5 / 4;
   background-image: url(resources/images/backgrounds/background.jpg);
   background-repeat: repeat;
   background-position: top center;
@@ -442,34 +338,48 @@ footer div {
   background-attachment: fixed;
 }
 
-.portfolio-container {
-  display: flex;
-  flex-wrap: wrap;
+.img-card {
+  width: 250px;
+  height: 250px;
   align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  background-color: hsl(45, 100%, 95%);
-  width: 100%;
-  padding: 10px;
+  margin: 15px;
+  padding: 0%;
 }
 
-.imagen-card-container{
+.descripcion {
   display: flex;
   justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 250px;
+  position: relative;
+  bottom: 250px;
+  opacity: 0;
+  background-color: #ffbf00;
+  border-radius: 4px;
+  border: none;
+  padding: 5px;
 }
 
-.imagen-card{
-  width: 100%;
+.img-card:hover .descripcion {
+  transition-delay: 0.1s;
+  transition: all 0.5s ease-in-out;
+  opacity: 0.6;
+}
+
+.img-muestra {
+  width: 250px;
+  height: 250px;
   object-fit: cover;
+  border-radius: 4px;
 }
 
 /* Fin de parametros específicos de portfolio.html */
-
 /* Parametros de about-me.html */
 .grid-container-aboutme {
   display: grid;
-  grid-template-columns: 2fr 4fr 4fr 2fr;
-  grid-template-rows: repeat(4, auto) 150px repeat(3, auto);
+  grid-template-columns: 2fr 5fr 5fr 2fr;
+  grid-template-rows: repeat(7, auto);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
 }
@@ -481,6 +391,11 @@ footer div {
   background-position: top center;
   background-size: cover;
   background-attachment: fixed;
+  display: flex;
+  /* <<=== no tocar*/
+  width: 100%;
+  justify-content: center;
+  align-items: flex-end;
 }
 
 .menu-grid-aboutme {
@@ -494,7 +409,8 @@ footer div {
   grid-area: 3 / 3 / 4 / 4;
   display: flex;
   align-items: center;
-  margin: 10px 0;
+  margin: 10px;
+  margin-top: 70px;
 }
 
 .presentation-grid-aboutme-two {
@@ -502,71 +418,61 @@ footer div {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  margin: 10px 0;
+  margin: 10px;
 }
 
 .presentation-grid-aboutme-three {
-  grid-area: 6 / 3 / 7 / 4;
+  grid-area: 5 / 3 / 6 / 4;
   display: flex;
   align-items: center;
-  margin: 10px 0;
+  margin: 10px;
 }
 
 .presentation-grid-aboutme-four {
-  grid-area: 7 / 2 / 8 / 3;
+  grid-area: 6 / 2 / 7 / 3;
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  margin: 10px 0;
+  margin: 10px;
+  margin-bottom: 70px;
 }
 
 .photo-one-aboutme {
   grid-area: 3 / 2 / 4 / 3;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  padding: 10px;
-  margin: 10px 0;
+  justify-content: center;
+  margin: 10px;
+  margin-top: 70px;
 }
 
 .photo-two-aboutme {
   grid-area: 4 / 3 / 5 / 4;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  padding: 10px;
-  margin: 10px 0;
-}
-
-.grid-air-aboutme {
-  grid-area: 5 / 1 / 6 / 5;
-  background-image: url(resources/images/backgrounds/background.jpg);
-  background-repeat: repeat;
-  background-position: top center;
-  background-size: cover;
-  background-attachment: fixed;
+  justify-content: center;
+  margin: 10px;
 }
 
 .photo-three-aboutme {
-  grid-area: 6 / 2 / 7 / 3;
+  grid-area: 5 / 2 / 6 / 3;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  padding: 10px;
-  margin: 10px 0;
+  justify-content: center;
+  margin: 10px;
 }
 
 .photo-four-aboutme {
-  grid-area: 7 / 3 / 8 / 4;
+  grid-area: 6 / 3 / 7 / 4;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  padding: 10px;
-  margin: 10px 0;
+  justify-content: center;
+  margin: 10px;
+  margin-bottom: 70px;
 }
 
 .footer-grid-aboutme {
-  grid-area: 8 / 1 / 9 / 5;
+  grid-area: 7 / 1 / 8 / 5;
   background-image: url(resources/images/backgrounds/background.jpg);
   background-repeat: repeat;
   background-position: top center;
@@ -576,7 +482,7 @@ footer div {
 
 .photo-aboutme {
   width: 100%;
-  max-width: 300px;
+  max-width: 350px;
   border-radius: 5px;
   box-shadow: 0 0 7px lightgray;
 }
@@ -584,16 +490,18 @@ footer div {
 .presentation-title-start {
   width: 100%;
   text-align: start;
+  font-family: "bree";
 }
 
 .presentation-title-end {
+  font-family: "bree";
   width: 100%;
   text-align: end;
 }
 
 .presentation {
   width: 100%;
-  max-width: 450px;
+  max-width: 500px;
   font-size: clamp(12px, 2vw, 15px);
 }
 
@@ -606,12 +514,11 @@ footer div {
 }
 
 /* Fin de parametros específicos para about-me.html */
-
 /* parametros de tienda.html */
 .grid-container-tienda {
   display: grid;
   grid-template-columns: 1fr 9fr 1fr;
-  grid-template-rows: repeat(3, auto) 150px repeat(2, auto);
+  grid-template-rows: repeat(2, auto) 500px auto;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
 }
@@ -623,6 +530,11 @@ footer div {
   background-position: top center;
   background-size: cover;
   background-attachment: fixed;
+  display: flex;
+  /* <<=== no tocar*/
+  width: 100%;
+  justify-content: center;
+  align-items: flex-end;
 }
 
 .menu-grid-tienda {
@@ -632,14 +544,20 @@ footer div {
   z-index: 2;
 }
 
-.productos-grid-tienda1 {
+.productos-grid-tienda {
   grid-area: 3 / 2 / 4 / 3;
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
-.grid-air-tienda {
+.productos-grid-tienda nav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.footer-grid-tienda {
   grid-area: 4 / 1 / 5 / 4;
   background-image: url(resources/images/backgrounds/background.jpg);
   background-repeat: repeat;
@@ -648,37 +566,37 @@ footer div {
   background-attachment: fixed;
 }
 
-.productos-grid-tienda2 {
-  grid-area: 5 / 2 / 6 / 3;
+.tiendas-links {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 800px;
+  padding: 0px;
+}
+
+.tiendas-links li {
+  display: flex;
+  align-items: center;
+}
+
+.tiendas-links li a {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
-.productos-container {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  border: 1px solid hsl(45, 100%, 82%);
-}
-
-.footer-grid-tienda {
-  grid-area: 6 / 1 / 7 / 4;
-  background-image: url(resources/images/backgrounds/background.jpg);
-  background-repeat: repeat;
-  background-position: top center;
-  background-size: cover;
-  background-attachment: fixed;
+.tiendas-links li a:hover {
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.1) rotate(5deg);
 }
 
 /* Fin de parametros de tienda.html */
-
 /* parametros de contacto.html */
-
 .grid-container-contacto {
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
-  grid-template-rows: repeat(5, auto);
+  grid-template-columns: 1fr 9fr 1fr;
+  grid-template-rows: repeat(4, auto);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
 }
@@ -690,6 +608,11 @@ footer div {
   background-position: top center;
   background-size: cover;
   background-attachment: fixed;
+  display: flex;
+  /* <<=== no tocar*/
+  width: 100%;
+  justify-content: center;
+  align-items: flex-end;
 }
 
 .menu-grid-contacto {
@@ -699,55 +622,66 @@ footer div {
   z-index: 2;
 }
 
-.mensaje-grid-contacto {
+.formulario-grid-contacto {
   grid-area: 3 / 2 / 4 / 3;
   display: flex;
   justify-content: center;
-  padding: 10px;
-}
-
-.mensaje-container {
-  justify-content: center;
   width: 100%;
-  max-width: 500px;
-}
-
-.mensaje-container p {
-  font-size: 80%
-}
-
-.mensaje-grid-contacto p {
-  text-align: justify;
-}
-
-.formulario-grid-contacto {
-  grid-area: 4 / 2 / 5 / 3;
-  display: flex;
-  justify-content: center;
+  padding: 70px 0;
 }
 
 .form-container {
-  background-color: hsl(45, 100%, 92%);
-  border: 3px solid hsl(45, 100%, 50%);
-  border-radius: 15px;
-  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  padding: 15px;
   width: 100%;
-  max-width: 500px;
-  justify-content: center;
+  max-width: 1200px;
 }
 
-.formulario-grid-contacto form {
+.formulario {
+  width: 50%;
+  max-width: 550px;
+  padding: 15px;
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
 
-.formulario-grid-contacto form input {
+.formulario input {
   margin-bottom: 10px;
 }
 
+.mensaje-container {
+  padding: 15px;
+  justify-content: center;
+  width: 50%;
+  max-width: 500px;
+}
+
+.mensaje-container p {
+  text-align: justify;
+  font-size: clamp(12px, 2.2vw, 17px);
+}
+
+.mensaje-container p b {
+  font-size: clamp(12px, 2.2vw, 17px);
+}
+
+.form-field {
+  background-color: #bbc7d3;
+  border: none;
+  color: black;
+  padding: 5px;
+  font-size: 12px;
+}
+
+.send-button {
+  background-color: white;
+  border: white;
+}
+
 .footer-grid-contacto {
-  grid-area: 5 / 1 / 6 / 4;
+  grid-area: 4 / 1 / 5 / 4;
   background-image: url(resources/images/backgrounds/background.jpg);
   background-repeat: repeat;
   background-position: top center;
@@ -756,20 +690,11 @@ footer div {
 }
 
 /* Fin de parametros para contacto.html */
-
 /* inicio media queries */
 @media (max-width: 700px) {
-
   .redes-sociales {
     display: flex;
-    flex-direction: column;
     width: fit-content;
-  }
-
-  .enlaces {
-    display: flex;
-    justify-content: center;
-    width: 100%;
   }
 
   .enlaces a {
@@ -790,23 +715,100 @@ footer div {
 
   .grid-container-aboutme {
     grid-template-columns: 0.1fr 4fr 4fr 0.1fr;
+    grid-template-rows: repeat(11, auto);
+  }
+
+  .presentation-grid-aboutme-one {
+    grid-area: 3 / 2 / 4 / 4;
+    justify-content: center;
+  }
+
+  .photo-one-aboutme {
+    grid-area: 4 / 2 / 5 / 4;
+    margin: 10px;
+  }
+
+  .presentation-grid-aboutme-two {
+    grid-area: 5 / 2 / 6 / 4;
+    justify-content: center;
+  }
+
+  .photo-two-aboutme {
+    grid-area: 6 / 2 / 7 / 4;
+  }
+
+  .presentation-grid-aboutme-three {
+    grid-area: 7 / 2 / 8 / 4;
+    justify-content: center;
+  }
+
+  .photo-three-aboutme {
+    grid-area: 8 / 2 / 9 / 4;
+  }
+
+  .presentation-grid-aboutme-four {
+    grid-area: 9 / 2 / 10 / 4;
+    justify-content: center;
+    margin: 10px;
+  }
+
+  .photo-four-aboutme {
+    grid-area: 10 / 2 / 11 / 4;
+  }
+
+  .presentation-title-end {
+    text-align: start;
   }
 
   .grid-container-tienda {
     grid-template-columns: 0fr 1fr 0fr;
   }
 
-
   .grid-container-contacto {
     grid-template-columns: 0.3fr 10fr 0.3fr;
   }
 
+  .footer-grid-aboutme {
+    grid-area: 11 / 1 / 12 / 5;
+  }
+
+  .tiendas-virtuales {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    justify-content: end;
+  }
+
+  .tiendas-links {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .tiendas-links li {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
 }
 
+@media (max-width: 900px) {
+  .form-container {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .formulario {
+    width: 100%;
+  }
+
+  .mensaje-container {
+    width: 100%;
+  }
+}
 
 /* parametros para contrarrestar los que vienen por defecto en bootstrap */
 a {
-  color: hsl(221, 56%, 31%);
+  color: #233f7b;
   text-decoration: none;
 }
 
@@ -822,6 +824,11 @@ a:hover {
   padding: 5px;
 }
 
+.navbar:hover .nav-item:not(:hover) a {
+  transition: all 0.35s ease-in-out;
+  color: #6084d2;
+}
+
 .nav-item {
   display: flex;
   justify-content: end;
@@ -831,29 +838,46 @@ a:hover {
   border-radius: 5px;
 }
 
-.nav-item:hover {
-  transform: scale(1.1);
-  transition: all 0.3s ease-in-out;
-  background-color: hsl(45, 100%, 70%);
-}
-
 .nav-item a {
   font-weight: bold;
 }
 
 .btn-primary {
-  background-color: hsl(45, 100%, 70%);
-  color: hsl(221, 56%, 31%);
+  background-color: #ffd966;
+  color: #233f7b;
   border: none;
 }
 
 .btn-primary:hover {
   transition: all 0.3s ease-in-out;
-  background-color: hsl(45, 100%, 50%);
-  color: hsl(221, 56%, 31%);
+  background-color: #ffbf00;
+  color: #233f7b;
 }
 
 .modal-body img {
   width: 100%;
   object-fit: contain;
+}
+
+.modal-structure-image {
+  padding: 20px;
+}
+
+.modal-structure-text {
+  padding: 20px;
+}
+
+.modal-structure-text h3 {
+  font-size: clamp(14px, 3vw, 30px);
+  font-weight: bold;
+}
+
+.modal-structure-text article {
+  font-size: clamp(12px, 2vw, 15px);
+  text-align: justify;
+}
+
+.modal-structure-text article a {
+  font-size: clamp(12px, 2vw, 15px);
+  text-decoration: underline;
 }
