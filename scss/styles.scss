@@ -43,6 +43,7 @@ $color-secundario-dark: hsl(45, 100%, 50%);
 $color-secundario-claro: hsl(45, 100%, 82%);
 $color-terciario: hsl(45, 100%, 70%);
 $color-articulos: hsl(210, 22%, 78%);
+$color-botones-activos: hsl(227, 45%, 74%);
 
 // Fin de Paleta de colores //
 
@@ -89,6 +90,10 @@ $color-articulos: hsl(210, 22%, 78%);
     box-shadow: 0 0 6px lightgray;
 }
 
+.card-title {
+    font-family: "bree";
+}
+
 
 /* parametros de cabecera */
 
@@ -114,9 +119,9 @@ $color-articulos: hsl(210, 22%, 78%);
 .title-container {
     display: flex;
     flex-direction: column;
-    height: 100%;
-    width: 40%;
-    max-width: 575px;
+    height: 80%;
+    width: 100%;
+    max-width: fit-content;
     justify-content: center;
 
     div {
@@ -130,8 +135,8 @@ $color-articulos: hsl(210, 22%, 78%);
 .maintitle {
     font-family: "bree";
     text-decoration: underline;
-    text-underline-offset: 7px;
-    font-size: clamp(13px, 5.2vw, 80px);
+    text-underline-offset: 14px;
+    font-size: clamp(13px, 4.5vw, 60px);
     margin-bottom: 15px;
     vertical-align: middle;
 }
@@ -169,14 +174,19 @@ footer {
 .redes-sociales-container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .imagen-despedida {
     width: 10rem;
 }
 
+
 .redes-sociales {
     display: flex;
+    position: relative;
+    top: 15px;
     padding: 0px;
     justify-content: flex-start;
     width: 100%;
@@ -203,16 +213,32 @@ footer {
 }
 
 .legal {
+
     p {
-        b {
-            font-family: "bree";
-            font-size: clamp(12px, 1.7vw, 16px);
-        }
+        margin: 0;
+        font-family: "bree";
+        font-size: clamp(12px, 1.7vw, 16px);
+        font-weight: bold;
+
     }
 }
 
 .ir-al-inicio {
-    font-size: 12px;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    a{
+        padding: 5px;
+        background-color: $color-primario;
+        border-radius: 3px;
+        font-size: 15px;
+        margin: 5px 40px;
+        font-weight: bold;
+    }
+    a:hover{
+        transition: all 0.4s ease-in-out;
+        background-color: $color-secundario-dark;
+    }
 }
 
 /* Fin de Parametros de footer */
@@ -254,6 +280,33 @@ footer {
 
 .content-two-grid-index {
     grid-area: 4 / 1 / 5 / 4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+
+    h3 {
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+
+        b {
+            display: flex;
+            justify-content: center;
+            font-size: 35px;
+            font-family: "bree";
+            margin: 0;
+
+        }
+    }
+
+    article {
+        margin: 0;
+        width: 50%;
+        max-width: 800px;
+        text-align: center;
+    }
 }
 
 .content-three-grid-index {
@@ -293,24 +346,6 @@ footer {
 }
 
 /* Fin de Parametros especiales de carrousel */
-
-.intro {
-    display: flex;
-    justify-content: center;
-    padding: 40px 25px 45px 25px;
-}
-
-.intro-article {
-    width: 80%;
-    max-width: 800px;
-    text-align: center;
-
-    h2 {
-        b {
-            font-size: 50px;
-        }
-    }
-}
 
 /* Fin de parametros específicos para Index.html */
 
@@ -711,6 +746,7 @@ footer {
 .send-button {
     background-color: white;
     border: white;
+    font-family: "bree";
 }
 
 .footer-grid-contacto {
@@ -827,7 +863,13 @@ footer {
         }
     }
 
+    .redes-sociales-top {
+        flex-direction: column;
+    }
+
 }
+
+
 
 @media (max-width: 900px) {
     .form-container {
@@ -841,6 +883,13 @@ footer {
 
     .mensaje-container {
         width: 100%;
+    }
+
+    .content-two-grid-index {
+        article {
+            width: 100%;
+        }
+
     }
 }
 
@@ -911,6 +960,7 @@ a:hover {
     h3 {
         font-size: clamp(14px, 3vw, 30px);
         font-weight: bold;
+        font-family: "bree";
     }
 
     article {
@@ -922,4 +972,21 @@ a:hover {
             text-decoration: underline;
         }
     }
+}
+
+.btn:active {
+    background-color: $color-botones-activos;
+}
+
+.btn:focus {
+    background-color: $color-botones-activos;
+}
+
+.btn-secondary{
+    background-color: $color-botones-activos;
+    border: none;
+}
+
+.btn-close{
+    display: none;
 }
