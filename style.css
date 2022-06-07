@@ -239,7 +239,7 @@ footer {
 
 .content-three-grid-index {
   grid-area: 5 / 2 / 6 / 3;
-  padding: 1.5rem;
+  padding: 70px 0;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -303,7 +303,7 @@ footer {
   justify-content: space-evenly;
   flex-wrap: wrap;
   width: 100%;
-  padding: 70px; }
+  padding: 70px 0; }
 
 .footer-grid-portfolio {
   grid-area: 4 / 1 / 5 / 4;
@@ -615,6 +615,39 @@ footer {
 
 /* Fin de parametros para contacto.html */
 /* inicio media queries */
+@media (max-width: 450px) {
+  .header-grid-tienda,
+  .header-grid-portfolio,
+  .header-grid-index,
+  .header-grid-aboutme,
+  .header-grid-contacto {
+    flex-direction: column-reverse;
+    align-items: center; }
+  .logo-container {
+    justify-content: center;
+    width: 40%; }
+  .main-logo {
+    position: static; }
+  .title-container {
+    width: 100%; }
+  .maintitle {
+    font-size: 40px;
+    margin-bottom: 20px;
+    vertical-align: middle; }
+  .subtitle {
+    font-size: 25px;
+    text-align: center; }
+  .redes-sociales-nav-top {
+    position: absolute;
+    right: 20px;
+    top: 125px;
+    padding: 0;
+    width: fit-content; }
+  .redes-sociales-top {
+    padding: 0; }
+  .legal {
+    width: 70%; } }
+
 @media (max-width: 700px) {
   .redes-sociales {
     display: flex;
@@ -622,11 +655,7 @@ footer {
   .enlaces a {
     width: fit-content; }
   .grid-container-index {
-    grid-template-columns: 0.3fr 10fr 0.3fr; }
-  .grid-container-inicio {
-    grid-template-columns: 0.3fr 10fr 0.3fr; }
-  .grid-container-portfolio {
-    grid-template-columns: 0.3fr 10fr 0.3fr; }
+    grid-template-columns: 0fr 10fr 0fr; }
   .grid-container-aboutme {
     grid-template-columns: 0.1fr 4fr 4fr 0.1fr;
     grid-template-rows: repeat(11, auto); }
@@ -684,7 +713,9 @@ footer {
   .mensaje-container {
     width: 100%; }
   .content-two-grid-index article {
-    width: 100%; } }
+    width: 100%; }
+  .grid-container-portfolio {
+    grid-template-columns: 0fr 6fr 0fr; } }
 
 /* parametros para contrarrestar los que vienen por defecto en bootstrap */
 a {
@@ -701,9 +732,9 @@ a:hover {
   justify-content: end;
   padding: 5px; }
 
-.navbar:hover .nav-item:not(:hover) a {
+.nav-item:hover a {
   transition: all 0.35s ease-in-out;
-  color: #6084d2; }
+  color: #3865c7; }
 
 .nav-item {
   display: flex;
