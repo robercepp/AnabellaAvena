@@ -38,6 +38,7 @@
 // Paleta de colores //
 
 $color-fuente: hsl(221, 56%, 31%);
+$color-fuente-claro: hsl(221, 56%, 50%);
 $color-primario: hsl(45, 100%, 82%);
 $color-secundario-dark: hsl(45, 100%, 50%);
 $color-secundario-claro: hsl(45, 100%, 82%);
@@ -227,7 +228,8 @@ footer {
     display: flex;
     justify-content: flex-end;
     width: 100%;
-    a{
+
+    a {
         padding: 5px;
         background-color: $color-primario;
         border-radius: 3px;
@@ -235,7 +237,8 @@ footer {
         margin: 5px 40px;
         font-weight: bold;
     }
-    a:hover{
+
+    a:hover {
         transition: all 0.4s ease-in-out;
         background-color: $color-secundario-dark;
     }
@@ -311,7 +314,7 @@ footer {
 
 .content-three-grid-index {
     grid-area: 5 / 2 / 6 / 3;
-    padding: 1.5rem;
+    padding: 70px 0;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -386,7 +389,7 @@ footer {
     justify-content: space-evenly;
     flex-wrap: wrap;
     width: 100%;
-    padding: 70px;
+    padding: 70px 0;
 }
 
 .footer-grid-portfolio {
@@ -688,8 +691,6 @@ footer {
     z-index: 2;
 }
 
-
-
 .formulario-grid-contacto {
     grid-area: 3 / 2 / 4 / 3;
     display: flex;
@@ -761,6 +762,60 @@ footer {
 /* Fin de parametros para contacto.html */
 
 /* inicio media queries */
+
+@media (max-width: 450px) {
+
+    .header-grid-tienda,
+    .header-grid-portfolio,
+    .header-grid-index,
+    .header-grid-aboutme,
+    .header-grid-contacto {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .logo-container {
+        justify-content: center;
+        width: 40%;
+    }
+
+    .main-logo {
+        position: static;
+    }
+
+    .title-container {
+        width: 100%;
+    }
+
+    .maintitle {
+        font-size: 40px;
+        margin-bottom: 20px;
+        vertical-align: middle;
+
+    }
+
+    .subtitle {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .redes-sociales-nav-top {
+        position: absolute;
+        right: 20px;
+        top: 125px;
+        padding: 0;
+        width: fit-content;
+    }
+
+    .redes-sociales-top {
+        padding: 0;
+    }
+
+    .legal {
+        width: 70%;
+    }
+}
+
 @media (max-width: 700px) {
 
     .redes-sociales {
@@ -775,15 +830,7 @@ footer {
     }
 
     .grid-container-index {
-        grid-template-columns: 0.3fr 10fr 0.3fr;
-    }
-
-    .grid-container-inicio {
-        grid-template-columns: 0.3fr 10fr 0.3fr;
-    }
-
-    .grid-container-portfolio {
-        grid-template-columns: 0.3fr 10fr 0.3fr;
+        grid-template-columns: 0fr 10fr 0fr;
     }
 
     .grid-container-aboutme {
@@ -866,9 +913,7 @@ footer {
     .redes-sociales-top {
         flex-direction: column;
     }
-
 }
-
 
 
 @media (max-width: 900px) {
@@ -889,7 +934,10 @@ footer {
         article {
             width: 100%;
         }
+    }
 
+    .grid-container-portfolio {
+        grid-template-columns: 0fr 6fr 0fr;
     }
 }
 
@@ -911,10 +959,10 @@ a:hover {
     padding: 5px;
 }
 
-.navbar:hover .nav-item:not(:hover) {
+.nav-item:hover {
     a {
         transition: all 0.35s ease-in-out;
-        color: hsl(221, 56%, 60%);
+        color: $color-fuente-claro
     }
 }
 
@@ -982,11 +1030,11 @@ a:hover {
     background-color: $color-botones-activos;
 }
 
-.btn-secondary{
+.btn-secondary {
     background-color: $color-botones-activos;
     border: none;
 }
 
-.btn-close{
+.btn-close {
     display: none;
 }
