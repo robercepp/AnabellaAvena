@@ -1,0 +1,74 @@
+/*comienzo de imports*/
+
+@import "../base/animations";
+@import "../base/fonts";
+
+/*fin de imports*/
+
+%header{
+    background-image: url(../resources/images/backgrounds/background.jpg);
+    background-repeat: repeat;
+    background-position: top center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: flex-end;
+    width: 30%;
+}
+
+.main-logo {
+    width: 100%;
+    max-width: 225px;
+    position: relative;
+    top: 33px;
+    z-index: 3;
+}
+
+.main-logo:hover {
+@extend %animation-img;
+}
+
+.title-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 80%;
+    width: 100%;
+    max-width: fit-content;
+    div {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.maintitle {
+    font-family: "bree";
+    text-decoration: underline;
+    text-underline-offset: 14px;
+    font-size: clamp(13px, 4.5vw, 60px);
+    margin-bottom: 15px;
+    vertical-align: middle;
+}
+
+.subtitle {
+    font-size: clamp(17px, 2vw, 30px);
+}
+
+.redes-sociales-nav-top {
+    width: 30%;
+}
+
+.redes-sociales-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+

@@ -1,0 +1,89 @@
+/*Parametros de ajuste para Footers de todos los html*/
+
+/*Imports*/
+@import "../base/fonts";
+@import "../base/paleta-de-colores";
+
+
+%footer{
+    background-image: url(../resources/images/backgrounds/background.jpg);
+    background-repeat: repeat;
+    background-position: top center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.redes-sociales-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen-despedida {
+    width: 10rem;
+}
+
+
+.redes-sociales {
+    display: flex;
+    position: relative;
+    top: 15px;
+    padding: 0px;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.redes-sociales-nav {
+    vertical-align: middle;
+    width: 100%;
+}
+
+.links {
+    height: 2rem;
+    margin: 5px;
+}
+
+.legal {
+
+    p {
+        margin: 0;
+        font-family: "bree";
+        font-size: clamp(12px, 1.7vw, 16px);
+        font-weight: bold;
+
+    }
+}
+
+.ir-al-inicio {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+
+    a {
+        padding: 5px;
+        background-color: $color-primario;
+        border-radius: 3px;
+        font-size: 15px;
+        margin: 5px 40px;
+        font-weight: bold;
+    }
+
+    a:hover {
+        @extend %ir-al-inicio;
+
+    }
+}

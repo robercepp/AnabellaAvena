@@ -1,0 +1,96 @@
+/* Parametros de about-me.html */
+
+/*imports*/
+@import "components/header";
+@import "components/footer";
+@import "../base/general";
+@import "../base/mixins";
+
+.grid-container-aboutme {
+    @extend %grid-container;
+    grid-template-columns: 2fr 5fr 5fr 2fr;
+    grid-template-rows: repeat(7, auto);
+}
+
+.header-grid-aboutme {
+    grid-area: 1 / 1 / 2 / 5;
+    @extend %header;
+}
+
+.menu-grid-aboutme {
+    grid-area: 2 / 1 / 3 / 5;
+    @extend %menu;
+}
+
+.presentation-grid-aboutme-one {
+    grid-area: 3 / 3 / 4 / 4;
+    @include grid-about-me(flex, center, 10px);
+    margin-top: 70px;
+}
+
+.presentation-grid-aboutme-two {
+    grid-area: 4 / 2 / 5 / 3;
+    @include grid-about-me(flex, center, 10px);
+    justify-content: flex-end;
+}
+
+.presentation-grid-aboutme-three {
+    grid-area: 5 / 3 / 6 / 4;
+    @include grid-about-me(flex, center, 10px);
+}
+
+.presentation-grid-aboutme-four {
+    grid-area: 6 / 2 / 7 / 3;
+    @include grid-about-me(flex, center, 10px);
+    justify-content: flex-end;
+    margin-bottom: 70px;
+}
+
+.photo-one-aboutme {
+    grid-area: 3 / 2 / 4 / 3;
+    @include grid-photo-about-me(flex, center, center, 10px);
+    margin-top: 70px;
+}
+
+.photo-two-aboutme {
+    grid-area: 4 / 3 / 5 / 4;
+    @include grid-photo-about-me(flex, center, center, 10px);
+}
+
+.photo-three-aboutme {
+    grid-area: 5 / 2 / 6 / 3;
+    @include grid-photo-about-me(flex, center, center, 10px);
+}
+
+.photo-four-aboutme {
+    grid-area: 6 / 3 / 7 / 4;
+    @include grid-photo-about-me(flex, center, center, 10px);
+    margin-bottom: 70px;
+}
+
+.footer-grid-aboutme {
+    grid-area: 7 / 1 / 8 / 5;
+    @extend %footer;
+}
+
+.photo-aboutme {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 5px;
+    box-shadow: 0 0 7px lightgray;
+}
+
+.presentation-title-start {
+    @include titulos-presentacion-about-me("bree", 100%, start);
+}
+
+.presentation-title-end {
+    @include titulos-presentacion-about-me("bree", 100%, end);
+}
+
+.presentation {
+    width: 100%;
+    max-width: 500px;
+    font-size: clamp(12px, 2vw, 15px);
+    text-align: justify;
+}

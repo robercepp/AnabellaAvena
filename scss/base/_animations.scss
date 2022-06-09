@@ -1,0 +1,42 @@
+/*Animaciones de elementos*/
+
+/*imports*/
+@import "../base/paleta-de-colores";
+
+/*Animaciones de menú*/
+%animation-menu {
+    transition: all 0.35s ease-in-out;
+    color: $color-fuente-claro
+}
+
+/*Botones de tarjetas "ver el proyecto"*/
+%animation-card-button{
+    transition: all 0.3s ease-in-out;
+    background-color: $color-secundario-dark;
+    color: $color-fuente;
+}
+
+/*Imagen Logo de Sitio*/
+%animation-img {
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.1) rotate(5deg);
+}
+
+/*Tarjetas de Portfolio*/
+%animation-card-hover {
+    transition-delay: 0.1s;
+    transition: all 0.5s ease-in-out;
+    opacity: 0.6;
+}
+
+/*Enlaces a sitios externos*/
+%animation-enlaces {
+    transition: all .4s ease-in;
+    transform: scale(1.1);
+}
+
+/*botón ir al inicio del footer*/
+%ir-al-inicio {
+    transition: all 0.4s ease-in-out;
+    background-color: $color-secundario-dark;
+}

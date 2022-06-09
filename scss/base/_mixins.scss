@@ -1,0 +1,21 @@
+/*Mixins para distintos elementos posiblemente variables*/
+
+/*Parametro de organización de contenido en about-me.html*/
+@mixin grid-about-me ($display, $alineacion, $margen) {
+    display: $display;
+    align-items: $alineacion;
+    margin: $margen;
+}
+
+@mixin grid-photo-about-me ($display, $alineacion, $justificacion, $margen) {
+    display: $display;
+    align-items: $alineacion;
+    justify-content: $justificacion;
+    margin: $margen
+}
+
+@mixin titulos-presentacion-about-me ($fuente, $ancho, $alineacion) {
+font-family: $fuente;
+width: $ancho;
+text-align: $alineacion;
+}
