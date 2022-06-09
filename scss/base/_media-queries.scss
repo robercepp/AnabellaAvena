@@ -1,0 +1,181 @@
+/* inicio media queries */
+
+/*Ajustes para 450px o menos*/
+@media (max-width: 450px) {
+
+    .header-grid-tienda,
+    .header-grid-portfolio,
+    .header-grid-index,
+    .header-grid-aboutme,
+    .header-grid-contacto {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .logo-container {
+        justify-content: center;
+        width: 40%;
+    }
+
+    .main-logo {
+        position: static;
+    }
+
+    .title-container {
+        width: 100%;
+    }
+
+    .maintitle {
+        font-size: 40px;
+        margin-bottom: 20px;
+        vertical-align: middle;
+
+    }
+
+    .subtitle {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .redes-sociales-nav-top {
+        position: absolute;
+        right: 20px;
+        top: 125px;
+        padding: 0;
+        width: fit-content;
+    }
+
+    .redes-sociales-top {
+        padding: 0;
+    }
+
+    .legal {
+        width: 70%;
+    }
+}
+
+/*Ajustes para 700px o menos*/
+@media (max-width: 700px) {
+
+    .redes-sociales {
+        display: flex;
+        width: fit-content;
+    }
+
+    .enlaces {
+        a {
+            width: fit-content;
+        }
+    }
+
+    .grid-container-index {
+        grid-template-columns: 0fr 10fr 0fr;
+    }
+
+    .grid-container-aboutme {
+        grid-template-columns: 0.1fr 4fr 4fr 0.1fr;
+        grid-template-rows: repeat(11, auto)
+    }
+
+    .presentation-grid-aboutme-one {
+        grid-area: 3 / 2 / 4 / 4;
+        justify-content: center;
+    }
+
+    .photo-one-aboutme {
+        grid-area: 4 / 2 / 5 / 4;
+        margin: 10px;
+    }
+
+    .presentation-grid-aboutme-two {
+        grid-area: 5 / 2 / 6 / 4;
+        justify-content: center;
+    }
+
+    .photo-two-aboutme {
+        grid-area: 6 / 2 / 7 / 4;
+    }
+
+    .presentation-grid-aboutme-three {
+        grid-area: 7 / 2 / 8 / 4;
+        justify-content: center;
+    }
+
+    .photo-three-aboutme {
+        grid-area: 8 / 2 / 9 / 4;
+    }
+
+    .presentation-grid-aboutme-four {
+        grid-area: 9 / 2 / 10 / 4;
+        justify-content: center;
+        margin: 10px;
+    }
+
+    .photo-four-aboutme {
+        grid-area: 10 / 2 / 11 / 4;
+    }
+
+    .presentation-title-end {
+        text-align: start;
+    }
+
+    .grid-container-tienda {
+        grid-template-columns: 0fr 1fr 0fr;
+    }
+
+    .grid-container-contacto {
+        grid-template-columns: 0.3fr 10fr 0.3fr;
+    }
+
+    .footer-grid-aboutme {
+        grid-area: 11 / 1 / 12 / 5;
+    }
+
+    .tiendas-virtuales {
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        justify-content: end;
+    }
+
+    .tiendas-links {
+        flex-direction: column;
+        justify-content: center;
+
+        li {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+    }
+
+    .redes-sociales-top {
+        flex-direction: column;
+    }
+}
+
+/*Ajustes para 900px o menos*/
+@media (max-width: 900px) {
+    .form-container {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .formulario {
+        width: 100%;
+    }
+
+    .mensaje-container {
+        width: 100%;
+    }
+
+    .content-two-grid-index {
+        article {
+            width: 100%;
+        }
+    }
+
+    .grid-container-portfolio {
+        grid-template-columns: 0fr 6fr 0fr;
+    }
+}

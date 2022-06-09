@@ -1,0 +1,53 @@
+/*parametros pertenecientes a tarjetas de sitio*/
+
+@import "../base/fonts";
+@import "../base/paleta-de-colores";
+@import "../base/animations";
+
+
+/*Cards de Index.html*/
+.card {
+    margin: 10px;
+    border: 1px solid $color-secundario-dark;
+    box-shadow: 0 0 6px lightgray;
+}
+
+.card-title {
+    font-family: "bree";
+}
+
+/*Cards de Portfolio.html*/
+.img-card {
+    width: 250px;
+    height: 250px;
+    align-items: center;
+    margin: 15px;
+    padding: 0%;
+}
+
+.descripcion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 250px;
+    position: relative;
+    bottom: 250px;
+    opacity: 0;
+    background-color: $color-secundario-dark;
+    border-radius: 4px;
+    border: none;
+    padding: 5px;
+}
+
+.img-card:hover .descripcion {
+@extend %animation-card-hover
+}
+
+
+.img-muestra {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 4px;
+}
