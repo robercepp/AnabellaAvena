@@ -1,9 +1,6 @@
 /*Animaciones de elementos*/
 
-/*imports*/
-@import "../base/paleta-de-colores";
 
-/*Animaciones de menú*/
 %animation-menu {
     transition: all 0.35s ease-in-out;
     color: $color-fuente-claro

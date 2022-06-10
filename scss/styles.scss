@@ -1,8 +1,16 @@
-
+@import "base/fonts";
+@import "base/paleta-de-colores";
+@import "base/general";
+@import "components/header";
+@import "components/footer";
+@import "base/mixins";
 @import "components/index";
 @import "components/portfolio";
 @import "components/about-me";
 @import "components/tienda";
 @import "components/contacto";
 @import "base/media-queries";
+@import "components/carousel";
+@import "components/cards";
+@import "base/animations";
 @import "base/especiales";
