@@ -1,13 +1,5 @@
 /* parametros de tienda.html */
 
-/*imports*/
-@import "components/header";
-@import "components/footer";
-@import "../base/general";
-@import "../base/mixins";
-@import "../base/animations";
-
-
 .grid-container-tienda {
     @extend %grid-container;
     grid-template-columns: 1fr 9fr 1fr;

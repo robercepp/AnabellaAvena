@@ -1,14 +1,5 @@
 /*Parametros de Index.html*/
 
-/*imports*/
-@import "components/header";
-@import "components/footer";
-@import "../base/general";
-@import "../base/paleta-de-colores";
-@import "components/cards";
-@import "../base/fonts";
-@import "components/carousel";
-
 .grid-container-index {
     @extend %grid-container;
     grid-template-columns: 1fr 6fr 1fr;

@@ -1,42 +1,4 @@
 @charset "UTF-8";
-/*Parametros de Index.html*/
-/*imports*/
-/*comienzo de imports*/
-/*Animaciones de elementos*/
-/*imports*/
-/*Paleta de colores utilizadas en todo el sitio*/
-/*Animaciones de menú*/
-.nav-item:hover a {
-  transition: all 0.35s ease-in-out;
-  color: #3865c7; }
-
-/*Botones de tarjetas "ver el proyecto"*/
-.btn-primary:hover {
-  transition: all 0.3s ease-in-out;
-  background-color: #ffbf00;
-  color: #233f7b; }
-
-/*Imagen Logo de Sitio*/
-.main-logo:hover, .tiendas-links li a:hover {
-  transition: all 0.3s ease-in-out;
-  transform: scale(1.1) rotate(5deg); }
-
-/*Tarjetas de Portfolio*/
-.img-card:hover .descripcion {
-  transition-delay: 0.1s;
-  transition: all 0.5s ease-in-out;
-  opacity: 0.6; }
-
-/*Enlaces a sitios externos*/
-.enlaces:hover {
-  transition: all .4s ease-in;
-  transform: scale(1.1); }
-
-/*botón ir al inicio del footer*/
-.ir-al-inicio a:hover {
-  transition: all 0.4s ease-in-out;
-  background-color: #ffbf00; }
-
 /*Fuentes usadas en todo el sitio*/
 @font-face {
   font-family: "bree";
@@ -66,9 +28,44 @@
   font-family: "ruda-medium";
   src: url(../resources/fonts/Ruda-Medium.ttf); }
 
-/*fin de imports*/
+/*Parametros pertinentes a todos los html*/
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  font-family: "ruda-regular";
+  color: #233f7b;
+  list-style: none;
+  font-size: 20px; }
+
+.fondo-menu {
+  background-color: #ffe8a3; }
+
+.grid-container-index, .grid-container-portfolio, .grid-container-aboutme, .grid-container-tienda, .grid-container-contacto {
+  display: grid;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px; }
+
+.content-three-grid-index, .content-one-grid-portfolio {
+  padding: 70px 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center; }
+
+.menu-grid-index, .menu-grid-portfolio, .menu-grid-aboutme, .menu-grid-tienda, .menu-grid-contacto {
+  position: sticky;
+  top: 0px;
+  z-index: 1; }
+
+.enlaces {
+  display: flex;
+  justify-content: center; }
+
+/*Parametros de ajuste para Headers de todos los html*/
 .header-grid-index, .header-grid-portfolio, .header-grid-aboutme, .header-grid-tienda, .header-grid-contacto {
-  background-image: url(../resources/images/backgrounds/background.jpg);
+  background-image: url(../resources/images/backgrounds/background.webp);
   background-repeat: repeat;
   background-position: top center;
   background-size: cover;
@@ -122,39 +119,8 @@
   justify-content: flex-end; }
 
 /*Parametros de ajuste para Footers de todos los html*/
-/*Imports*/
-/*Fuentes usadas en todo el sitio*/
-@font-face {
-  font-family: "bree";
-  src: url(../resources/fonts/BreeSerif-Regular.ttf); }
-
-@font-face {
-  font-family: "ruda-regular";
-  src: url(../resources/fonts/Ruda-Regular.ttf); }
-
-@font-face {
-  font-family: "ruda-bold";
-  src: url(../resources/fonts/Ruda-Bold.ttf); }
-
-@font-face {
-  font-family: "ruda-semibold";
-  src: url(../resources/fonts/Ruda-SemiBold.ttf); }
-
-@font-face {
-  font-family: "ruda-extrabold";
-  src: url(../resources/fonts/Ruda-ExtraBold.ttf); }
-
-@font-face {
-  font-family: "ruda-black";
-  src: url(../resources/fonts/Ruda-Black.ttf); }
-
-@font-face {
-  font-family: "ruda-medium";
-  src: url(../resources/fonts/Ruda-Medium.ttf); }
-
-/*Paleta de colores utilizadas en todo el sitio*/
 .footer-grid-index, .footer-grid-portfolio, .footer-grid-aboutme, .footer-grid-tienda, .footer-grid-contacto {
-  background-image: url(../resources/images/backgrounds/background.jpg);
+  background-image: url(../resources/images/backgrounds/background.webp);
   background-repeat: repeat;
   background-position: top center;
   background-size: cover;
@@ -214,254 +180,9 @@ footer {
     margin: 5px 40px;
     font-weight: bold; }
 
-/*Parametros pertinentes a todos los html*/
-/*Fuentes usadas en todo el sitio*/
-@font-face {
-  font-family: "bree";
-  src: url(../resources/fonts/BreeSerif-Regular.ttf); }
-
-@font-face {
-  font-family: "ruda-regular";
-  src: url(../resources/fonts/Ruda-Regular.ttf); }
-
-@font-face {
-  font-family: "ruda-bold";
-  src: url(../resources/fonts/Ruda-Bold.ttf); }
-
-@font-face {
-  font-family: "ruda-semibold";
-  src: url(../resources/fonts/Ruda-SemiBold.ttf); }
-
-@font-face {
-  font-family: "ruda-extrabold";
-  src: url(../resources/fonts/Ruda-ExtraBold.ttf); }
-
-@font-face {
-  font-family: "ruda-black";
-  src: url(../resources/fonts/Ruda-Black.ttf); }
-
-@font-face {
-  font-family: "ruda-medium";
-  src: url(../resources/fonts/Ruda-Medium.ttf); }
-
-/*Paleta de colores utilizadas en todo el sitio*/
-/*Animaciones de elementos*/
-/*imports*/
-/*Paleta de colores utilizadas en todo el sitio*/
-/*Animaciones de menú*/
-.nav-item:hover a {
-  transition: all 0.35s ease-in-out;
-  color: #3865c7; }
-
-/*Botones de tarjetas "ver el proyecto"*/
-.btn-primary:hover {
-  transition: all 0.3s ease-in-out;
-  background-color: #ffbf00;
-  color: #233f7b; }
-
-/*Imagen Logo de Sitio*/
-.main-logo:hover, .tiendas-links li a:hover {
-  transition: all 0.3s ease-in-out;
-  transform: scale(1.1) rotate(5deg); }
-
-/*Tarjetas de Portfolio*/
-.img-card:hover .descripcion {
-  transition-delay: 0.1s;
-  transition: all 0.5s ease-in-out;
-  opacity: 0.6; }
-
-/*Enlaces a sitios externos*/
-.enlaces:hover {
-  transition: all .4s ease-in;
-  transform: scale(1.1); }
-
-/*botón ir al inicio del footer*/
-.ir-al-inicio a:hover {
-  transition: all 0.4s ease-in-out;
-  background-color: #ffbf00; }
-
-* {
-  padding: 0;
-  margin: 0;
-  text-decoration: none;
-  font-family: "ruda-regular";
-  color: #233f7b;
-  list-style: none;
-  font-size: 20px; }
-
-.fondo-menu {
-  background-color: #ffe8a3; }
-
-.grid-container-index, .grid-container-portfolio, .grid-container-aboutme, .grid-container-tienda, .grid-container-contacto {
-  display: grid;
-  grid-column-gap: 0px;
-  grid-row-gap: 0px; }
-
-.content-three-grid-index, .content-one-grid-portfolio {
-  padding: 70px 0;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center; }
-
-.menu-grid-index, .menu-grid-portfolio, .menu-grid-aboutme, .menu-grid-tienda, .menu-grid-contacto {
-  position: sticky;
-  top: 0px;
-  z-index: 1; }
-
-.enlaces {
-  display: flex;
-  justify-content: center; }
-
-/*Paleta de colores utilizadas en todo el sitio*/
-/*parametros pertenecientes a tarjetas de sitio*/
-/*Fuentes usadas en todo el sitio*/
-@font-face {
-  font-family: "bree";
-  src: url(../resources/fonts/BreeSerif-Regular.ttf); }
-
-@font-face {
-  font-family: "ruda-regular";
-  src: url(../resources/fonts/Ruda-Regular.ttf); }
-
-@font-face {
-  font-family: "ruda-bold";
-  src: url(../resources/fonts/Ruda-Bold.ttf); }
-
-@font-face {
-  font-family: "ruda-semibold";
-  src: url(../resources/fonts/Ruda-SemiBold.ttf); }
-
-@font-face {
-  font-family: "ruda-extrabold";
-  src: url(../resources/fonts/Ruda-ExtraBold.ttf); }
-
-@font-face {
-  font-family: "ruda-black";
-  src: url(../resources/fonts/Ruda-Black.ttf); }
-
-@font-face {
-  font-family: "ruda-medium";
-  src: url(../resources/fonts/Ruda-Medium.ttf); }
-
-/*Paleta de colores utilizadas en todo el sitio*/
-/*Animaciones de elementos*/
-/*imports*/
-/*Paleta de colores utilizadas en todo el sitio*/
-/*Animaciones de menú*/
-.nav-item:hover a {
-  transition: all 0.35s ease-in-out;
-  color: #3865c7; }
-
-/*Botones de tarjetas "ver el proyecto"*/
-.btn-primary:hover {
-  transition: all 0.3s ease-in-out;
-  background-color: #ffbf00;
-  color: #233f7b; }
-
-/*Imagen Logo de Sitio*/
-.main-logo:hover, .tiendas-links li a:hover {
-  transition: all 0.3s ease-in-out;
-  transform: scale(1.1) rotate(5deg); }
-
-/*Tarjetas de Portfolio*/
-.img-card:hover .descripcion {
-  transition-delay: 0.1s;
-  transition: all 0.5s ease-in-out;
-  opacity: 0.6; }
-
-/*Enlaces a sitios externos*/
-.enlaces:hover {
-  transition: all .4s ease-in;
-  transform: scale(1.1); }
-
-/*botón ir al inicio del footer*/
-.ir-al-inicio a:hover {
-  transition: all 0.4s ease-in-out;
-  background-color: #ffbf00; }
-
-/*Cards de Index.html*/
-.card {
-  margin: 10px;
-  border: 1px solid #ffbf00;
-  box-shadow: 0 0 6px lightgray; }
-
-.card-title {
-  font-family: "bree"; }
-
-/*Cards de Portfolio.html*/
-.img-card {
-  width: 250px;
-  height: 250px;
-  align-items: center;
-  margin: 15px;
-  padding: 0%; }
-
-.descripcion {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 250px;
-  height: 250px;
-  position: relative;
-  bottom: 250px;
-  opacity: 0;
-  background-color: #ffbf00;
-  border-radius: 4px;
-  border: none;
-  padding: 5px; }
-
-.img-muestra {
-  width: 250px;
-  height: 250px;
-  object-fit: cover;
-  border-radius: 4px; }
-
-/*Fuentes usadas en todo el sitio*/
-@font-face {
-  font-family: "bree";
-  src: url(../resources/fonts/BreeSerif-Regular.ttf); }
-
-@font-face {
-  font-family: "ruda-regular";
-  src: url(../resources/fonts/Ruda-Regular.ttf); }
-
-@font-face {
-  font-family: "ruda-bold";
-  src: url(../resources/fonts/Ruda-Bold.ttf); }
-
-@font-face {
-  font-family: "ruda-semibold";
-  src: url(../resources/fonts/Ruda-SemiBold.ttf); }
-
-@font-face {
-  font-family: "ruda-extrabold";
-  src: url(../resources/fonts/Ruda-ExtraBold.ttf); }
-
-@font-face {
-  font-family: "ruda-black";
-  src: url(../resources/fonts/Ruda-Black.ttf); }
-
-@font-face {
-  font-family: "ruda-medium";
-  src: url(../resources/fonts/Ruda-Medium.ttf); }
-
-/* Parametros específicos de carrousel */
-/*Paleta de colores utilizadas en todo el sitio*/
-.carousel-container {
-  display: flex;
-  justify-content: center;
-  background-color: white;
-  padding: 15px;
-  border-radius: 15px;
-  margin: 10px 0; }
-
-.carousel {
-  width: 100%;
-  max-width: 600px;
-  z-index: 0; }
-
+/*Mixins para distintos elementos posiblemente variables*/
+/*Parametro de organización de contenido en about-me.html*/
+/*Parametros de Index.html*/
 .grid-container-index {
   grid-template-columns: 1fr 6fr 1fr;
   grid-template-rows: repeat(6, auto); }
@@ -508,320 +229,6 @@ footer {
   grid-area: 6 / 1 / 7 / 4; }
 
 /*Parametros de Portfolio.html*/
-/*imports*/
-/*comienzo de imports*/
-/*Animaciones de elementos*/
-/*imports*/
-/*Paleta de colores utilizadas en todo el sitio*/
-/*Animaciones de menú*/
-.nav-item:hover a {
-  transition: all 0.35s ease-in-out;
-  color: #3865c7; }
-
-/*Botones de tarjetas "ver el proyecto"*/
-.btn-primary:hover {
-  transition: all 0.3s ease-in-out;
-  background-color: #ffbf00;
-  color: #233f7b; }
-
-/*Imagen Logo de Sitio*/
-.main-logo:hover, .tiendas-links li a:hover {
-  transition: all 0.3s ease-in-out;
-  transform: scale(1.1) rotate(5deg); }
-
-/*Tarjetas de Portfolio*/
-.img-card:hover .descripcion {
-  transition-delay: 0.1s;
-  transition: all 0.5s ease-in-out;
-  opacity: 0.6; }
-
-/*Enlaces a sitios externos*/
-.enlaces:hover {
-  transition: all .4s ease-in;
-  transform: scale(1.1); }
-
-/*botón ir al inicio del footer*/
-.ir-al-inicio a:hover {
-  transition: all 0.4s ease-in-out;
-  background-color: #ffbf00; }
-
-/*Fuentes usadas en todo el sitio*/
-@font-face {
-  font-family: "bree";
-  src: url(../resources/fonts/BreeSerif-Regular.ttf); }
-
-@font-face {
-  font-family: "ruda-regular";
-  src: url(../resources/fonts/Ruda-Regular.ttf); }
-
-@font-face {
-  font-family: "ruda-bold";
-  src: url(../resources/fonts/Ruda-Bold.ttf); }
-
-@font-face {
-  font-family: "ruda-semibold";
-  src: url(../resources/fonts/Ruda-SemiBold.ttf); }
-
-@font-face {
-  font-family: "ruda-extrabold";
-  src: url(../resources/fonts/Ruda-ExtraBold.ttf); }
-
-@font-face {
-  font-family: "ruda-black";
-  src: url(../resources/fonts/Ruda-Black.ttf); }
-
-@font-face {
-  font-family: "ruda-medium";
-  src: url(../resources/fonts/Ruda-Medium.ttf); }
-
-/*fin de imports*/
-.header-grid-index, .header-grid-portfolio, .header-grid-aboutme, .header-grid-tienda, .header-grid-contacto {
-  background-image: url(../resources/images/backgrounds/background.jpg);
-  background-repeat: repeat;
-  background-position: top center;
-  background-size: cover;
-  background-attachment: fixed;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end; }
-
-.logo-container {
-  display: flex;
-  justify-content: flex-end;
-  width: 30%; }
-
-.main-logo {
-  width: 100%;
-  max-width: 225px;
-  position: relative;
-  top: 33px;
-  z-index: 3; }
-
-.title-container {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  height: 80%;
-  width: 100%;
-  max-width: fit-content; }
-  .title-container div {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    text-align: center; }
-
-.maintitle {
-  font-family: "bree";
-  text-decoration: underline;
-  text-underline-offset: 14px;
-  font-size: clamp(13px, 4.5vw, 60px);
-  margin-bottom: 15px;
-  vertical-align: middle; }
-
-.subtitle {
-  font-size: clamp(17px, 2vw, 30px); }
-
-.redes-sociales-nav-top {
-  width: 30%; }
-
-.redes-sociales-top {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end; }
-
-/*Parametros de ajuste para Footers de todos los html*/
-/*Imports*/
-/*Fuentes usadas en todo el sitio*/
-@font-face {
-  font-family: "bree";
-  src: url(../resources/fonts/BreeSerif-Regular.ttf); }
-
-@font-face {
-  font-family: "ruda-regular";
-  src: url(../resources/fonts/Ruda-Regular.ttf); }
-
-@font-face {
-  font-family: "ruda-bold";
-  src: url(../resources/fonts/Ruda-Bold.ttf); }
-
-@font-face {
-  font-family: "ruda-semibold";
-  src: url(../resources/fonts/Ruda-SemiBold.ttf); }
-
-@font-face {
-  font-family: "ruda-extrabold";
-  src: url(../resources/fonts/Ruda-ExtraBold.ttf); }
-
-@font-face {
-  font-family: "ruda-black";
-  src: url(../resources/fonts/Ruda-Black.ttf); }
-
-@font-face {
-  font-family: "ruda-medium";
-  src: url(../resources/fonts/Ruda-Medium.ttf); }
-
-/*Paleta de colores utilizadas en todo el sitio*/
-.footer-grid-index, .footer-grid-portfolio, .footer-grid-aboutme, .footer-grid-tienda, .footer-grid-contacto {
-  background-image: url(../resources/images/backgrounds/background.jpg);
-  background-repeat: repeat;
-  background-position: top center;
-  background-size: cover;
-  background-attachment: fixed; }
-
-footer {
-  width: 100%;
-  display: flex;
-  flex-direction: column; }
-
-.footer-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center; }
-
-.redes-sociales-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
-
-.imagen-despedida {
-  width: 10rem; }
-
-.redes-sociales {
-  display: flex;
-  position: relative;
-  top: 15px;
-  padding: 0px;
-  justify-content: flex-start;
-  width: 100%; }
-
-.redes-sociales-nav {
-  vertical-align: middle;
-  width: 100%; }
-
-.links {
-  height: 2rem;
-  margin: 5px; }
-
-.legal p {
-  margin: 0;
-  font-family: "bree";
-  font-size: clamp(12px, 1.7vw, 16px);
-  font-weight: bold; }
-
-.ir-al-inicio {
-  display: flex;
-  justify-content: flex-end;
-  width: 100%; }
-  .ir-al-inicio a {
-    padding: 5px;
-    background-color: #ffe8a3;
-    border-radius: 3px;
-    font-size: 15px;
-    margin: 5px 40px;
-    font-weight: bold; }
-
-/*Parametros pertinentes a todos los html*/
-/*Fuentes usadas en todo el sitio*/
-@font-face {
-  font-family: "bree";
-  src: url(../resources/fonts/BreeSerif-Regular.ttf); }
-
-@font-face {
-  font-family: "ruda-regular";
-  src: url(../resources/fonts/Ruda-Regular.ttf); }
-
-@font-face {
-  font-family: "ruda-bold";
-  src: url(../resources/fonts/Ruda-Bold.ttf); }
-
-@font-face {
-  font-family: "ruda-semibold";
-  src: url(../resources/fonts/Ruda-SemiBold.ttf); }
-
-@font-face {
-  font-family: "ruda-extrabold";
-  src: url(../resources/fonts/Ruda-ExtraBold.ttf); }
-
-@font-face {
-  font-family: "ruda-black";
-  src: url(../resources/fonts/Ruda-Black.ttf); }
-
-@font-face {
-  font-family: "ruda-medium";
-  src: url(../resources/fonts/Ruda-Medium.ttf); }
-
-/*Paleta de colores utilizadas en todo el sitio*/
-/*Animaciones de elementos*/
-/*imports*/
-/*Paleta de colores utilizadas en todo el sitio*/
-/*Animaciones de menú*/
-.nav-item:hover a {
-  transition: all 0.35s ease-in-out;
-  color: #3865c7; }
-
-/*Botones de tarjetas "ver el proyecto"*/
-.btn-primary:hover {
-  transition: all 0.3s ease-in-out;
-  background-color: #ffbf00;
-  color: #233f7b; }
-
-/*Imagen Logo de Sitio*/
-.main-logo:hover, .tiendas-links li a:hover {
-  transition: all 0.3s ease-in-out;
-  transform: scale(1.1) rotate(5deg); }
-
-/*Tarjetas de Portfolio*/
-.img-card:hover .descripcion {
-  transition-delay: 0.1s;
-  transition: all 0.5s ease-in-out;
-  opacity: 0.6; }
-
-/*Enlaces a sitios externos*/
-.enlaces:hover {
-  transition: all .4s ease-in;
-  transform: scale(1.1); }
-
-/*botón ir al inicio del footer*/
-.ir-al-inicio a:hover {
-  transition: all 0.4s ease-in-out;
-  background-color: #ffbf00; }
-
-* {
-  padding: 0;
-  margin: 0;
-  text-decoration: none;
-  font-family: "ruda-regular";
-  color: #233f7b;
-  list-style: none;
-  font-size: 20px; }
-
-.fondo-menu {
-  background-color: #ffe8a3; }
-
-.grid-container-index, .grid-container-portfolio, .grid-container-aboutme, .grid-container-tienda, .grid-container-contacto {
-  display: grid;
-  grid-column-gap: 0px;
-  grid-row-gap: 0px; }
-
-.content-three-grid-index, .content-one-grid-portfolio {
-  padding: 70px 0;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center; }
-
-.menu-grid-index, .menu-grid-portfolio, .menu-grid-aboutme, .menu-grid-tienda, .menu-grid-contacto {
-  position: sticky;
-  top: 0px;
-  z-index: 1; }
-
-.enlaces {
-  display: flex;
-  justify-content: center; }
-
 .grid-container-portfolio {
   grid-template-columns: 1fr 6fr 1fr;
   grid-template-rows: repeat(4, auto); }
@@ -839,322 +246,6 @@ footer {
   grid-area: 4 / 1 / 5 / 4; }
 
 /* Parametros de about-me.html */
-/*imports*/
-/*comienzo de imports*/
-/*Animaciones de elementos*/
-/*imports*/
-/*Paleta de colores utilizadas en todo el sitio*/
-/*Animaciones de menú*/
-.nav-item:hover a {
-  transition: all 0.35s ease-in-out;
-  color: #3865c7; }
-
-/*Botones de tarjetas "ver el proyecto"*/
-.btn-primary:hover {
-  transition: all 0.3s ease-in-out;
-  background-color: #ffbf00;
-  color: #233f7b; }
-
-/*Imagen Logo de Sitio*/
-.main-logo:hover, .tiendas-links li a:hover {
-  transition: all 0.3s ease-in-out;
-  transform: scale(1.1) rotate(5deg); }
-
-/*Tarjetas de Portfolio*/
-.img-card:hover .descripcion {
-  transition-delay: 0.1s;
-  transition: all 0.5s ease-in-out;
-  opacity: 0.6; }
-
-/*Enlaces a sitios externos*/
-.enlaces:hover {
-  transition: all .4s ease-in;
-  transform: scale(1.1); }
-
-/*botón ir al inicio del footer*/
-.ir-al-inicio a:hover {
-  transition: all 0.4s ease-in-out;
-  background-color: #ffbf00; }
-
-/*Fuentes usadas en todo el sitio*/
-@font-face {
-  font-family: "bree";
-  src: url(../resources/fonts/BreeSerif-Regular.ttf); }
-
-@font-face {
-  font-family: "ruda-regular";
-  src: url(../resources/fonts/Ruda-Regular.ttf); }
-
-@font-face {
-  font-family: "ruda-bold";
-  src: url(../resources/fonts/Ruda-Bold.ttf); }
-
-@font-face {
-  font-family: "ruda-semibold";
-  src: url(../resources/fonts/Ruda-SemiBold.ttf); }
-
-@font-face {
-  font-family: "ruda-extrabold";
-  src: url(../resources/fonts/Ruda-ExtraBold.ttf); }
-
-@font-face {
-  font-family: "ruda-black";
-  src: url(../resources/fonts/Ruda-Black.ttf); }
-
-@font-face {
-  font-family: "ruda-medium";
-  src: url(../resources/fonts/Ruda-Medium.ttf); }
-
-/*fin de imports*/
-.header-grid-index, .header-grid-portfolio, .header-grid-aboutme, .header-grid-tienda, .header-grid-contacto {
-  background-image: url(../resources/images/backgrounds/background.jpg);
-  background-repeat: repeat;
-  background-position: top center;
-  background-size: cover;
-  background-attachment: fixed;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end; }
-
-.logo-container {
-  display: flex;
-  justify-content: flex-end;
-  width: 30%; }
-
-.main-logo {
-  width: 100%;
-  max-width: 225px;
-  position: relative;
-  top: 33px;
-  z-index: 3; }
-
-.title-container {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  height: 80%;
-  width: 100%;
-  max-width: fit-content; }
-  .title-container div {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    text-align: center; }
-
-.maintitle {
-  font-family: "bree";
-  text-decoration: underline;
-  text-underline-offset: 14px;
-  font-size: clamp(13px, 4.5vw, 60px);
-  margin-bottom: 15px;
-  vertical-align: middle; }
-
-.subtitle {
-  font-size: clamp(17px, 2vw, 30px); }
-
-.redes-sociales-nav-top {
-  width: 30%; }
-
-.redes-sociales-top {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end; }
-
-/*Parametros de ajuste para Footers de todos los html*/
-/*Imports*/
-/*Fuentes usadas en todo el sitio*/
-@font-face {
-  font-family: "bree";
-  src: url(../resources/fonts/BreeSerif-Regular.ttf); }
-
-@font-face {
-  font-family: "ruda-regular";
-  src: url(../resources/fonts/Ruda-Regular.ttf); }
-
-@font-face {
-  font-family: "ruda-bold";
-  src: url(../resources/fonts/Ruda-Bold.ttf); }
-
-@font-face {
-  font-family: "ruda-semibold";
-  src: url(../resources/fonts/Ruda-SemiBold.ttf); }
-
-@font-face {
-  font-family: "ruda-extrabold";
-  src: url(../resources/fonts/Ruda-ExtraBold.ttf); }
-
-@font-face {
-  font-family: "ruda-black";
-  src: url(../resources/fonts/Ruda-Black.ttf); }
-
-@font-face {
-  font-family: "ruda-medium";
-  src: url(../resources/fonts/Ruda-Medium.ttf); }
-
-/*Paleta de colores utilizadas en todo el sitio*/
-.footer-grid-index, .footer-grid-portfolio, .footer-grid-aboutme, .footer-grid-tienda, .footer-grid-contacto {
-  background-image: url(../resources/images/backgrounds/background.jpg);
-  background-repeat: repeat;
-  background-position: top center;
-  background-size: cover;
-  background-attachment: fixed; }
-
-footer {
-  width: 100%;
-  display: flex;
-  flex-direction: column; }
-
-.footer-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center; }
-
-.redes-sociales-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
-
-.imagen-despedida {
-  width: 10rem; }
-
-.redes-sociales {
-  display: flex;
-  position: relative;
-  top: 15px;
-  padding: 0px;
-  justify-content: flex-start;
-  width: 100%; }
-
-.redes-sociales-nav {
-  vertical-align: middle;
-  width: 100%; }
-
-.links {
-  height: 2rem;
-  margin: 5px; }
-
-.legal p {
-  margin: 0;
-  font-family: "bree";
-  font-size: clamp(12px, 1.7vw, 16px);
-  font-weight: bold; }
-
-.ir-al-inicio {
-  display: flex;
-  justify-content: flex-end;
-  width: 100%; }
-  .ir-al-inicio a {
-    padding: 5px;
-    background-color: #ffe8a3;
-    border-radius: 3px;
-    font-size: 15px;
-    margin: 5px 40px;
-    font-weight: bold; }
-
-/*Parametros pertinentes a todos los html*/
-/*Fuentes usadas en todo el sitio*/
-@font-face {
-  font-family: "bree";
-  src: url(../resources/fonts/BreeSerif-Regular.ttf); }
-
-@font-face {
-  font-family: "ruda-regular";
-  src: url(../resources/fonts/Ruda-Regular.ttf); }
-
-@font-face {
-  font-family: "ruda-bold";
-  src: url(../resources/fonts/Ruda-Bold.ttf); }
-
-@font-face {
-  font-family: "ruda-semibold";
-  src: url(../resources/fonts/Ruda-SemiBold.ttf); }
-
-@font-face {
-  font-family: "ruda-extrabold";
-  src: url(../resources/fonts/Ruda-ExtraBold.ttf); }
-
-@font-face {
-  font-family: "ruda-black";
-  src: url(../resources/fonts/Ruda-Black.ttf); }
-
-@font-face {
-  font-family: "ruda-medium";
-  src: url(../resources/fonts/Ruda-Medium.ttf); }
-
-/*Paleta de colores utilizadas en todo el sitio*/
-/*Animaciones de elementos*/
-/*imports*/
-/*Paleta de colores utilizadas en todo el sitio*/
-/*Animaciones de menú*/
-.nav-item:hover a {
-  transition: all 0.35s ease-in-out;
-  color: #3865c7; }
-
-/*Botones de tarjetas "ver el proyecto"*/
-.btn-primary:hover {
-  transition: all 0.3s ease-in-out;
-  background-color: #ffbf00;
-  color: #233f7b; }
-
-/*Imagen Logo de Sitio*/
-.main-logo:hover, .tiendas-links li a:hover {
-  transition: all 0.3s ease-in-out;
-  transform: scale(1.1) rotate(5deg); }
-
-/*Tarjetas de Portfolio*/
-.img-card:hover .descripcion {
-  transition-delay: 0.1s;
-  transition: all 0.5s ease-in-out;
-  opacity: 0.6; }
-
-/*Enlaces a sitios externos*/
-.enlaces:hover {
-  transition: all .4s ease-in;
-  transform: scale(1.1); }
-
-/*botón ir al inicio del footer*/
-.ir-al-inicio a:hover {
-  transition: all 0.4s ease-in-out;
-  background-color: #ffbf00; }
-
-* {
-  padding: 0;
-  margin: 0;
-  text-decoration: none;
-  font-family: "ruda-regular";
-  color: #233f7b;
-  list-style: none;
-  font-size: 20px; }
-
-.fondo-menu {
-  background-color: #ffe8a3; }
-
-.grid-container-index, .grid-container-portfolio, .grid-container-aboutme, .grid-container-tienda, .grid-container-contacto {
-  display: grid;
-  grid-column-gap: 0px;
-  grid-row-gap: 0px; }
-
-.content-three-grid-index, .content-one-grid-portfolio {
-  padding: 70px 0;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center; }
-
-.menu-grid-index, .menu-grid-portfolio, .menu-grid-aboutme, .menu-grid-tienda, .menu-grid-contacto {
-  position: sticky;
-  top: 0px;
-  z-index: 1; }
-
-.enlaces {
-  display: flex;
-  justify-content: center; }
-
-/*Mixins para distintos elementos posiblemente variables*/
-/*Parametro de organización de contenido en about-me.html*/
 .grid-container-aboutme {
   grid-template-columns: 2fr 5fr 5fr 2fr;
   grid-template-rows: repeat(7, auto); }
@@ -1249,357 +340,6 @@ footer {
   text-align: justify; }
 
 /* parametros de tienda.html */
-/*imports*/
-/*comienzo de imports*/
-/*Animaciones de elementos*/
-/*imports*/
-/*Paleta de colores utilizadas en todo el sitio*/
-/*Animaciones de menú*/
-.nav-item:hover a {
-  transition: all 0.35s ease-in-out;
-  color: #3865c7; }
-
-/*Botones de tarjetas "ver el proyecto"*/
-.btn-primary:hover {
-  transition: all 0.3s ease-in-out;
-  background-color: #ffbf00;
-  color: #233f7b; }
-
-/*Imagen Logo de Sitio*/
-.main-logo:hover, .tiendas-links li a:hover {
-  transition: all 0.3s ease-in-out;
-  transform: scale(1.1) rotate(5deg); }
-
-/*Tarjetas de Portfolio*/
-.img-card:hover .descripcion {
-  transition-delay: 0.1s;
-  transition: all 0.5s ease-in-out;
-  opacity: 0.6; }
-
-/*Enlaces a sitios externos*/
-.enlaces:hover {
-  transition: all .4s ease-in;
-  transform: scale(1.1); }
-
-/*botón ir al inicio del footer*/
-.ir-al-inicio a:hover {
-  transition: all 0.4s ease-in-out;
-  background-color: #ffbf00; }
-
-/*Fuentes usadas en todo el sitio*/
-@font-face {
-  font-family: "bree";
-  src: url(../resources/fonts/BreeSerif-Regular.ttf); }
-
-@font-face {
-  font-family: "ruda-regular";
-  src: url(../resources/fonts/Ruda-Regular.ttf); }
-
-@font-face {
-  font-family: "ruda-bold";
-  src: url(../resources/fonts/Ruda-Bold.ttf); }
-
-@font-face {
-  font-family: "ruda-semibold";
-  src: url(../resources/fonts/Ruda-SemiBold.ttf); }
-
-@font-face {
-  font-family: "ruda-extrabold";
-  src: url(../resources/fonts/Ruda-ExtraBold.ttf); }
-
-@font-face {
-  font-family: "ruda-black";
-  src: url(../resources/fonts/Ruda-Black.ttf); }
-
-@font-face {
-  font-family: "ruda-medium";
-  src: url(../resources/fonts/Ruda-Medium.ttf); }
-
-/*fin de imports*/
-.header-grid-index, .header-grid-portfolio, .header-grid-aboutme, .header-grid-tienda, .header-grid-contacto {
-  background-image: url(../resources/images/backgrounds/background.jpg);
-  background-repeat: repeat;
-  background-position: top center;
-  background-size: cover;
-  background-attachment: fixed;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end; }
-
-.logo-container {
-  display: flex;
-  justify-content: flex-end;
-  width: 30%; }
-
-.main-logo {
-  width: 100%;
-  max-width: 225px;
-  position: relative;
-  top: 33px;
-  z-index: 3; }
-
-.title-container {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  height: 80%;
-  width: 100%;
-  max-width: fit-content; }
-  .title-container div {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    text-align: center; }
-
-.maintitle {
-  font-family: "bree";
-  text-decoration: underline;
-  text-underline-offset: 14px;
-  font-size: clamp(13px, 4.5vw, 60px);
-  margin-bottom: 15px;
-  vertical-align: middle; }
-
-.subtitle {
-  font-size: clamp(17px, 2vw, 30px); }
-
-.redes-sociales-nav-top {
-  width: 30%; }
-
-.redes-sociales-top {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end; }
-
-/*Parametros de ajuste para Footers de todos los html*/
-/*Imports*/
-/*Fuentes usadas en todo el sitio*/
-@font-face {
-  font-family: "bree";
-  src: url(../resources/fonts/BreeSerif-Regular.ttf); }
-
-@font-face {
-  font-family: "ruda-regular";
-  src: url(../resources/fonts/Ruda-Regular.ttf); }
-
-@font-face {
-  font-family: "ruda-bold";
-  src: url(../resources/fonts/Ruda-Bold.ttf); }
-
-@font-face {
-  font-family: "ruda-semibold";
-  src: url(../resources/fonts/Ruda-SemiBold.ttf); }
-
-@font-face {
-  font-family: "ruda-extrabold";
-  src: url(../resources/fonts/Ruda-ExtraBold.ttf); }
-
-@font-face {
-  font-family: "ruda-black";
-  src: url(../resources/fonts/Ruda-Black.ttf); }
-
-@font-face {
-  font-family: "ruda-medium";
-  src: url(../resources/fonts/Ruda-Medium.ttf); }
-
-/*Paleta de colores utilizadas en todo el sitio*/
-.footer-grid-index, .footer-grid-portfolio, .footer-grid-aboutme, .footer-grid-tienda, .footer-grid-contacto {
-  background-image: url(../resources/images/backgrounds/background.jpg);
-  background-repeat: repeat;
-  background-position: top center;
-  background-size: cover;
-  background-attachment: fixed; }
-
-footer {
-  width: 100%;
-  display: flex;
-  flex-direction: column; }
-
-.footer-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center; }
-
-.redes-sociales-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
-
-.imagen-despedida {
-  width: 10rem; }
-
-.redes-sociales {
-  display: flex;
-  position: relative;
-  top: 15px;
-  padding: 0px;
-  justify-content: flex-start;
-  width: 100%; }
-
-.redes-sociales-nav {
-  vertical-align: middle;
-  width: 100%; }
-
-.links {
-  height: 2rem;
-  margin: 5px; }
-
-.legal p {
-  margin: 0;
-  font-family: "bree";
-  font-size: clamp(12px, 1.7vw, 16px);
-  font-weight: bold; }
-
-.ir-al-inicio {
-  display: flex;
-  justify-content: flex-end;
-  width: 100%; }
-  .ir-al-inicio a {
-    padding: 5px;
-    background-color: #ffe8a3;
-    border-radius: 3px;
-    font-size: 15px;
-    margin: 5px 40px;
-    font-weight: bold; }
-
-/*Parametros pertinentes a todos los html*/
-/*Fuentes usadas en todo el sitio*/
-@font-face {
-  font-family: "bree";
-  src: url(../resources/fonts/BreeSerif-Regular.ttf); }
-
-@font-face {
-  font-family: "ruda-regular";
-  src: url(../resources/fonts/Ruda-Regular.ttf); }
-
-@font-face {
-  font-family: "ruda-bold";
-  src: url(../resources/fonts/Ruda-Bold.ttf); }
-
-@font-face {
-  font-family: "ruda-semibold";
-  src: url(../resources/fonts/Ruda-SemiBold.ttf); }
-
-@font-face {
-  font-family: "ruda-extrabold";
-  src: url(../resources/fonts/Ruda-ExtraBold.ttf); }
-
-@font-face {
-  font-family: "ruda-black";
-  src: url(../resources/fonts/Ruda-Black.ttf); }
-
-@font-face {
-  font-family: "ruda-medium";
-  src: url(../resources/fonts/Ruda-Medium.ttf); }
-
-/*Paleta de colores utilizadas en todo el sitio*/
-/*Animaciones de elementos*/
-/*imports*/
-/*Paleta de colores utilizadas en todo el sitio*/
-/*Animaciones de menú*/
-.nav-item:hover a {
-  transition: all 0.35s ease-in-out;
-  color: #3865c7; }
-
-/*Botones de tarjetas "ver el proyecto"*/
-.btn-primary:hover {
-  transition: all 0.3s ease-in-out;
-  background-color: #ffbf00;
-  color: #233f7b; }
-
-/*Imagen Logo de Sitio*/
-.main-logo:hover, .tiendas-links li a:hover {
-  transition: all 0.3s ease-in-out;
-  transform: scale(1.1) rotate(5deg); }
-
-/*Tarjetas de Portfolio*/
-.img-card:hover .descripcion {
-  transition-delay: 0.1s;
-  transition: all 0.5s ease-in-out;
-  opacity: 0.6; }
-
-/*Enlaces a sitios externos*/
-.enlaces:hover {
-  transition: all .4s ease-in;
-  transform: scale(1.1); }
-
-/*botón ir al inicio del footer*/
-.ir-al-inicio a:hover {
-  transition: all 0.4s ease-in-out;
-  background-color: #ffbf00; }
-
-* {
-  padding: 0;
-  margin: 0;
-  text-decoration: none;
-  font-family: "ruda-regular";
-  color: #233f7b;
-  list-style: none;
-  font-size: 20px; }
-
-.fondo-menu {
-  background-color: #ffe8a3; }
-
-.grid-container-index, .grid-container-portfolio, .grid-container-aboutme, .grid-container-tienda, .grid-container-contacto {
-  display: grid;
-  grid-column-gap: 0px;
-  grid-row-gap: 0px; }
-
-.content-three-grid-index, .content-one-grid-portfolio {
-  padding: 70px 0;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center; }
-
-.menu-grid-index, .menu-grid-portfolio, .menu-grid-aboutme, .menu-grid-tienda, .menu-grid-contacto {
-  position: sticky;
-  top: 0px;
-  z-index: 1; }
-
-.enlaces {
-  display: flex;
-  justify-content: center; }
-
-/*Mixins para distintos elementos posiblemente variables*/
-/*Parametro de organización de contenido en about-me.html*/
-/*Animaciones de elementos*/
-/*imports*/
-/*Paleta de colores utilizadas en todo el sitio*/
-/*Animaciones de menú*/
-.nav-item:hover a {
-  transition: all 0.35s ease-in-out;
-  color: #3865c7; }
-
-/*Botones de tarjetas "ver el proyecto"*/
-.btn-primary:hover {
-  transition: all 0.3s ease-in-out;
-  background-color: #ffbf00;
-  color: #233f7b; }
-
-/*Imagen Logo de Sitio*/
-.main-logo:hover, .tiendas-links li a:hover {
-  transition: all 0.3s ease-in-out;
-  transform: scale(1.1) rotate(5deg); }
-
-/*Tarjetas de Portfolio*/
-.img-card:hover .descripcion {
-  transition-delay: 0.1s;
-  transition: all 0.5s ease-in-out;
-  opacity: 0.6; }
-
-/*Enlaces a sitios externos*/
-.enlaces:hover {
-  transition: all .4s ease-in;
-  transform: scale(1.1); }
-
-/*botón ir al inicio del footer*/
-.ir-al-inicio a:hover {
-  transition: all 0.4s ease-in-out;
-  background-color: #ffbf00; }
-
 .grid-container-tienda {
   grid-template-columns: 1fr 9fr 1fr;
   grid-template-rows: repeat(2, auto) 500px auto; }
@@ -1639,350 +379,6 @@ footer {
       align-items: center; }
 
 /* parametros de contacto.html */
-/*imports*/
-/*comienzo de imports*/
-/*Animaciones de elementos*/
-/*imports*/
-/*Paleta de colores utilizadas en todo el sitio*/
-/*Animaciones de menú*/
-.nav-item:hover a {
-  transition: all 0.35s ease-in-out;
-  color: #3865c7; }
-
-/*Botones de tarjetas "ver el proyecto"*/
-.btn-primary:hover {
-  transition: all 0.3s ease-in-out;
-  background-color: #ffbf00;
-  color: #233f7b; }
-
-/*Imagen Logo de Sitio*/
-.main-logo:hover, .tiendas-links li a:hover {
-  transition: all 0.3s ease-in-out;
-  transform: scale(1.1) rotate(5deg); }
-
-/*Tarjetas de Portfolio*/
-.img-card:hover .descripcion {
-  transition-delay: 0.1s;
-  transition: all 0.5s ease-in-out;
-  opacity: 0.6; }
-
-/*Enlaces a sitios externos*/
-.enlaces:hover {
-  transition: all .4s ease-in;
-  transform: scale(1.1); }
-
-/*botón ir al inicio del footer*/
-.ir-al-inicio a:hover {
-  transition: all 0.4s ease-in-out;
-  background-color: #ffbf00; }
-
-/*Fuentes usadas en todo el sitio*/
-@font-face {
-  font-family: "bree";
-  src: url(../resources/fonts/BreeSerif-Regular.ttf); }
-
-@font-face {
-  font-family: "ruda-regular";
-  src: url(../resources/fonts/Ruda-Regular.ttf); }
-
-@font-face {
-  font-family: "ruda-bold";
-  src: url(../resources/fonts/Ruda-Bold.ttf); }
-
-@font-face {
-  font-family: "ruda-semibold";
-  src: url(../resources/fonts/Ruda-SemiBold.ttf); }
-
-@font-face {
-  font-family: "ruda-extrabold";
-  src: url(../resources/fonts/Ruda-ExtraBold.ttf); }
-
-@font-face {
-  font-family: "ruda-black";
-  src: url(../resources/fonts/Ruda-Black.ttf); }
-
-@font-face {
-  font-family: "ruda-medium";
-  src: url(../resources/fonts/Ruda-Medium.ttf); }
-
-/*fin de imports*/
-.header-grid-index, .header-grid-portfolio, .header-grid-aboutme, .header-grid-tienda, .header-grid-contacto {
-  background-image: url(../resources/images/backgrounds/background.jpg);
-  background-repeat: repeat;
-  background-position: top center;
-  background-size: cover;
-  background-attachment: fixed;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end; }
-
-.logo-container {
-  display: flex;
-  justify-content: flex-end;
-  width: 30%; }
-
-.main-logo {
-  width: 100%;
-  max-width: 225px;
-  position: relative;
-  top: 33px;
-  z-index: 3; }
-
-.title-container {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  height: 80%;
-  width: 100%;
-  max-width: fit-content; }
-  .title-container div {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    text-align: center; }
-
-.maintitle {
-  font-family: "bree";
-  text-decoration: underline;
-  text-underline-offset: 14px;
-  font-size: clamp(13px, 4.5vw, 60px);
-  margin-bottom: 15px;
-  vertical-align: middle; }
-
-.subtitle {
-  font-size: clamp(17px, 2vw, 30px); }
-
-.redes-sociales-nav-top {
-  width: 30%; }
-
-.redes-sociales-top {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end; }
-
-/*Parametros de ajuste para Footers de todos los html*/
-/*Imports*/
-/*Fuentes usadas en todo el sitio*/
-@font-face {
-  font-family: "bree";
-  src: url(../resources/fonts/BreeSerif-Regular.ttf); }
-
-@font-face {
-  font-family: "ruda-regular";
-  src: url(../resources/fonts/Ruda-Regular.ttf); }
-
-@font-face {
-  font-family: "ruda-bold";
-  src: url(../resources/fonts/Ruda-Bold.ttf); }
-
-@font-face {
-  font-family: "ruda-semibold";
-  src: url(../resources/fonts/Ruda-SemiBold.ttf); }
-
-@font-face {
-  font-family: "ruda-extrabold";
-  src: url(../resources/fonts/Ruda-ExtraBold.ttf); }
-
-@font-face {
-  font-family: "ruda-black";
-  src: url(../resources/fonts/Ruda-Black.ttf); }
-
-@font-face {
-  font-family: "ruda-medium";
-  src: url(../resources/fonts/Ruda-Medium.ttf); }
-
-/*Paleta de colores utilizadas en todo el sitio*/
-.footer-grid-index, .footer-grid-portfolio, .footer-grid-aboutme, .footer-grid-tienda, .footer-grid-contacto {
-  background-image: url(../resources/images/backgrounds/background.jpg);
-  background-repeat: repeat;
-  background-position: top center;
-  background-size: cover;
-  background-attachment: fixed; }
-
-footer {
-  width: 100%;
-  display: flex;
-  flex-direction: column; }
-
-.footer-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center; }
-
-.redes-sociales-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
-
-.imagen-despedida {
-  width: 10rem; }
-
-.redes-sociales {
-  display: flex;
-  position: relative;
-  top: 15px;
-  padding: 0px;
-  justify-content: flex-start;
-  width: 100%; }
-
-.redes-sociales-nav {
-  vertical-align: middle;
-  width: 100%; }
-
-.links {
-  height: 2rem;
-  margin: 5px; }
-
-.legal p {
-  margin: 0;
-  font-family: "bree";
-  font-size: clamp(12px, 1.7vw, 16px);
-  font-weight: bold; }
-
-.ir-al-inicio {
-  display: flex;
-  justify-content: flex-end;
-  width: 100%; }
-  .ir-al-inicio a {
-    padding: 5px;
-    background-color: #ffe8a3;
-    border-radius: 3px;
-    font-size: 15px;
-    margin: 5px 40px;
-    font-weight: bold; }
-
-/*Parametros pertinentes a todos los html*/
-/*Fuentes usadas en todo el sitio*/
-@font-face {
-  font-family: "bree";
-  src: url(../resources/fonts/BreeSerif-Regular.ttf); }
-
-@font-face {
-  font-family: "ruda-regular";
-  src: url(../resources/fonts/Ruda-Regular.ttf); }
-
-@font-face {
-  font-family: "ruda-bold";
-  src: url(../resources/fonts/Ruda-Bold.ttf); }
-
-@font-face {
-  font-family: "ruda-semibold";
-  src: url(../resources/fonts/Ruda-SemiBold.ttf); }
-
-@font-face {
-  font-family: "ruda-extrabold";
-  src: url(../resources/fonts/Ruda-ExtraBold.ttf); }
-
-@font-face {
-  font-family: "ruda-black";
-  src: url(../resources/fonts/Ruda-Black.ttf); }
-
-@font-face {
-  font-family: "ruda-medium";
-  src: url(../resources/fonts/Ruda-Medium.ttf); }
-
-/*Paleta de colores utilizadas en todo el sitio*/
-/*Animaciones de elementos*/
-/*imports*/
-/*Paleta de colores utilizadas en todo el sitio*/
-/*Animaciones de menú*/
-.nav-item:hover a {
-  transition: all 0.35s ease-in-out;
-  color: #3865c7; }
-
-/*Botones de tarjetas "ver el proyecto"*/
-.btn-primary:hover {
-  transition: all 0.3s ease-in-out;
-  background-color: #ffbf00;
-  color: #233f7b; }
-
-/*Imagen Logo de Sitio*/
-.main-logo:hover, .tiendas-links li a:hover {
-  transition: all 0.3s ease-in-out;
-  transform: scale(1.1) rotate(5deg); }
-
-/*Tarjetas de Portfolio*/
-.img-card:hover .descripcion {
-  transition-delay: 0.1s;
-  transition: all 0.5s ease-in-out;
-  opacity: 0.6; }
-
-/*Enlaces a sitios externos*/
-.enlaces:hover {
-  transition: all .4s ease-in;
-  transform: scale(1.1); }
-
-/*botón ir al inicio del footer*/
-.ir-al-inicio a:hover {
-  transition: all 0.4s ease-in-out;
-  background-color: #ffbf00; }
-
-* {
-  padding: 0;
-  margin: 0;
-  text-decoration: none;
-  font-family: "ruda-regular";
-  color: #233f7b;
-  list-style: none;
-  font-size: 20px; }
-
-.fondo-menu {
-  background-color: #ffe8a3; }
-
-.grid-container-index, .grid-container-portfolio, .grid-container-aboutme, .grid-container-tienda, .grid-container-contacto {
-  display: grid;
-  grid-column-gap: 0px;
-  grid-row-gap: 0px; }
-
-.content-three-grid-index, .content-one-grid-portfolio {
-  padding: 70px 0;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center; }
-
-.menu-grid-index, .menu-grid-portfolio, .menu-grid-aboutme, .menu-grid-tienda, .menu-grid-contacto {
-  position: sticky;
-  top: 0px;
-  z-index: 1; }
-
-.enlaces {
-  display: flex;
-  justify-content: center; }
-
-/*Paleta de colores utilizadas en todo el sitio*/
-/*Fuentes usadas en todo el sitio*/
-@font-face {
-  font-family: "bree";
-  src: url(../resources/fonts/BreeSerif-Regular.ttf); }
-
-@font-face {
-  font-family: "ruda-regular";
-  src: url(../resources/fonts/Ruda-Regular.ttf); }
-
-@font-face {
-  font-family: "ruda-bold";
-  src: url(../resources/fonts/Ruda-Bold.ttf); }
-
-@font-face {
-  font-family: "ruda-semibold";
-  src: url(../resources/fonts/Ruda-SemiBold.ttf); }
-
-@font-face {
-  font-family: "ruda-extrabold";
-  src: url(../resources/fonts/Ruda-ExtraBold.ttf); }
-
-@font-face {
-  font-family: "ruda-black";
-  src: url(../resources/fonts/Ruda-Black.ttf); }
-
-@font-face {
-  font-family: "ruda-medium";
-  src: url(../resources/fonts/Ruda-Medium.ttf); }
-
 .grid-container-contacto {
   grid-template-columns: 1fr 9fr 1fr;
   grid-template-rows: repeat(4, auto); }
@@ -2045,7 +441,7 @@ footer {
 
 /* inicio media queries */
 /*Ajustes para 450px o menos*/
-@media (max-width: 450px) {
+@media (max-width: 500px) {
   .header-grid-tienda,
   .header-grid-portfolio,
   .header-grid-index,
@@ -2149,37 +545,91 @@ footer {
   .grid-container-portfolio {
     grid-template-columns: 0fr 6fr 0fr; } }
 
+/* Parametros específicos de carrousel */
+.carousel-container {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  padding: 15px;
+  border-radius: 15px;
+  margin: 10px 0; }
+
+.carousel {
+  width: 100%;
+  max-width: 600px;
+  z-index: 0; }
+
+/*parametros pertenecientes a tarjetas de sitio*/
+/*Cards de Index.html*/
+.card {
+  margin: 10px;
+  border: 1px solid #ffbf00;
+  box-shadow: 0 0 6px lightgray; }
+
+.card-title {
+  font-family: "bree"; }
+
+/*Cards de Portfolio.html*/
+.img-card {
+  width: 250px;
+  height: 250px;
+  align-items: center;
+  margin: 15px;
+  padding: 0%; }
+
+.descripcion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 250px;
+  position: relative;
+  bottom: 250px;
+  opacity: 0;
+  background-color: #ffbf00;
+  border-radius: 4px;
+  border: none;
+  padding: 5px; }
+
+.img-muestra {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 4px; }
+
+/*Animaciones de elementos*/
+.nav-item:hover a {
+  transition: all 0.35s ease-in-out;
+  color: #3865c7; }
+
+/*Botones de tarjetas "ver el proyecto"*/
+.btn-primary:hover {
+  transition: all 0.3s ease-in-out;
+  background-color: #ffbf00;
+  color: #233f7b; }
+
+/*Imagen Logo de Sitio*/
+.main-logo:hover, .tiendas-links li a:hover {
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.1) rotate(5deg); }
+
+/*Tarjetas de Portfolio*/
+.img-card:hover .descripcion {
+  transition-delay: 0.1s;
+  transition: all 0.5s ease-in-out;
+  opacity: 0.6; }
+
+/*Enlaces a sitios externos*/
+.enlaces:hover {
+  transition: all .4s ease-in;
+  transform: scale(1.1); }
+
+/*botón ir al inicio del footer*/
+.ir-al-inicio a:hover {
+  transition: all 0.4s ease-in-out;
+  background-color: #ffbf00; }
+
 /* parametros para contrarrestar los que vienen por defecto en bootstrap */
-/*Paleta de colores utilizadas en todo el sitio*/
-/*Fuentes usadas en todo el sitio*/
-@font-face {
-  font-family: "bree";
-  src: url(../resources/fonts/BreeSerif-Regular.ttf); }
-
-@font-face {
-  font-family: "ruda-regular";
-  src: url(../resources/fonts/Ruda-Regular.ttf); }
-
-@font-face {
-  font-family: "ruda-bold";
-  src: url(../resources/fonts/Ruda-Bold.ttf); }
-
-@font-face {
-  font-family: "ruda-semibold";
-  src: url(../resources/fonts/Ruda-SemiBold.ttf); }
-
-@font-face {
-  font-family: "ruda-extrabold";
-  src: url(../resources/fonts/Ruda-ExtraBold.ttf); }
-
-@font-face {
-  font-family: "ruda-black";
-  src: url(../resources/fonts/Ruda-Black.ttf); }
-
-@font-face {
-  font-family: "ruda-medium";
-  src: url(../resources/fonts/Ruda-Medium.ttf); }
-
 a {
   color: #233f7b;
   text-decoration: none; }

@@ -1,12 +1,5 @@
 /* parametros de contacto.html */
 
-/*imports*/
-@import "../components/header";
-@import "../components/footer";
-@import "../base/general";
-@import "../base/paleta-de-colores";
-@import "../base/fonts";
-
 .grid-container-contacto {
     @extend %grid-container;
     grid-template-columns: 1fr 9fr 1fr;
