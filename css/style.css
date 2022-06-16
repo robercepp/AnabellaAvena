@@ -38,6 +38,9 @@
   list-style: none;
   font-size: 20px; }
 
+.disclaimer {
+  display: none; }
+
 .fondo-menu {
   background-color: #ffe8a3; }
 
