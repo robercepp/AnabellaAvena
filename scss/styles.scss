@@ -4,11 +4,11 @@
 @import "components/header";
 @import "components/footer";
 @import "base/mixins";
-@import "components/index";
-@import "components/portfolio";
-@import "components/about-me";
-@import "components/tienda";
-@import "components/contacto";
+@import "sections/index";
+@import "sections/portfolio";
+@import "sections/about-me";
+@import "sections/tienda";
+@import "sections/contacto";
 @import "base/media-queries";
 @import "components/carousel";
 @import "components/cards";
