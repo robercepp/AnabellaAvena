@@ -1,6 +1,6 @@
 /*Parametros de ajuste para Headers de todos los html*/
 
-%header{
+%header {
     background-image: url(../resources/images/backgrounds/background.webp);
     background-repeat: repeat;
     background-position: top center;
@@ -23,11 +23,12 @@
     position: relative;
     top: 33px;
     z-index: 3;
+
+    &:hover {
+    @extend %animation-img;
+    }
 }
 
-.main-logo:hover {
-@extend %animation-img;
-}
 
 .title-container {
     display: flex;
@@ -36,6 +37,7 @@
     height: 80%;
     width: 100%;
     max-width: fit-content;
+
     div {
         display: flex;
         justify-content: center;
@@ -66,4 +68,3 @@
     flex-direction: row;
     justify-content: flex-end;
 }
-

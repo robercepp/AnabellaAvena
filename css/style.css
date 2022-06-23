@@ -581,7 +581,7 @@ footer {
   border-radius: 4px; }
 
 /*Animaciones de elementos*/
-.nav-item:hover a {
+.nav-item a:hover {
   transition: all 0.35s ease-in-out;
   color: #3865c7; }
 
@@ -612,15 +612,16 @@ footer {
   transition: all 0.4s ease-in-out;
   background-color: #ffbf00; }
 
-/* parametros para contrarrestar los que vienen por defecto en bootstrap */
-a {
-  color: #233f7b;
-  text-decoration: none; }
-
+/*Enlaces de redes sociales*/
 a:hover {
   color: inherit;
   text-decoration: none;
   text-underline-offset: 2px; }
+
+/* parametros para contrarrestar los que vienen por defecto en bootstrap */
+a {
+  color: #233f7b;
+  text-decoration: none; }
 
 .collapse {
   display: flex;

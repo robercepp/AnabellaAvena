@@ -52,10 +52,10 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-        }
 
-        a:hover {
-            @extend %animation-img;
+            &:hover {
+                @extend %animation-img;
+            }
         }
     }
 }
